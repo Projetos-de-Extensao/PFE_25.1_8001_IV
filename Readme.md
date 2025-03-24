@@ -15,7 +15,7 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 |Matrícula | Aluno |
 | -- | -- |
 | 202503341672  |  Gabriel Barreto Borges |
-| xx/xxxxxx  |  Keanu Santos Germano |
+| 202503341664  |  Keanu Santos Germano |
 | 202211231061  |  Victor da Conceição |
 
 ## Sobre 
