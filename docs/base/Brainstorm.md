@@ -25,7 +25,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <b>Gabriel Barreto</b> - O objetivo é fornecer um serviço para venda de ingressos que torne possível facilitar a compra de ingressos para diversos tipos de eventos e também aumentar a publicidade dos artistas que utilizarem dos nossos serviços.
 </p>
  
-<b>Keanu Santos</b> - A plataforma deve fornece...
+<b>Keanu Santos</b> - A plataforma deve fornecer para o usuário o capacidade de encontrar eventos por categoria, local e data de realização. Também permite que o usuário compre os ingressos.
  
 <b>Ana Clara</b> - O objetivo da aplicação é....
  
@@ -36,12 +36,12 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
  
 ---
  
-### 2. Como será o processo para cadastrar um novo clientetorneio?
+### 2. Como será o processo para cadastrar um novo cliente?
  
 <p align = "justify">
 <b>Gabriel Barreto</b> - O cliente deverá preencher seu email com alguns dados pessoais seus como CPF, RG, data de nascimento.. Em seguida, deverá registrar algum meio de pagamento para poder comprar os ingressos, ou optar por meios como pix, boleto, etc.
  
-<b>Keanu Santos</b> - O cliente...
+<b>Keanu Santos</b> - O usuário deverá preencher os seguintes campos: nome, email, senha, cpf, rg e dados bancários para compra de ingresso.
  
 <b>Ana Clara</b> - Com o usuário logado, ele deverá...
 
@@ -58,7 +58,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 </p>
  
 <p align = "justify">
-<b>Keanu Santos</b> - O produto tem...
+<b>Keanu Santos</b> - O artista deverá concordar marcar que concorda com a taxa da plataforma descontada do valor do ingresso, após isso ele poderá criar eventos preenchendo os seguintes campos: Nome do evento, local, data de realização e descrição.
 </p>
  
 <b>Ana Clara</b> - O produto....
