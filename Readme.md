@@ -17,6 +17,7 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 | 202503341672  |  Gabriel Barreto Borges |
 | 202503341664  |  Keanu Santos Germano |
 | 202211231061  |  Victor da Conceição |
+| 202407095781  |  Yago Carvalho de Souza |
 
 ## Sobre 
 Descreva o seu projeto em linhas gerais. 
