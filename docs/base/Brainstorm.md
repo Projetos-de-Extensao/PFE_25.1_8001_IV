@@ -28,6 +28,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 </p>
  
 <b>Keanu Santos</b> - Fornecer ao usuário um site que mostre e venda ingressos para eventos separados por categoria, localidade e data de realização.
+
 <b>Victor Coutinho</b> - O principal objetivo da aplicação é a...
  
 <b>Yago Carvalho</b> - A plataforma deve gerenciar...
