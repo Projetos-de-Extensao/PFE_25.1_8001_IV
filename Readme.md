@@ -1,6 +1,6 @@
 # RepositorioTemplate
 Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)_(Grupo)_(NomeDoProjeto). !!** 
+**!! Atenção: Renomeie o seu repositório para 2025_Grupo IV_(NomeDoProjeto). !!** 
 
 **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: 2024.1_PFE1_ProjetoPandora!!**
  
@@ -21,13 +21,13 @@ Esse repositório é para ser utilizado pelos grupos como um template inicial, d
 | 202407095781  |  Yago Carvalho de Souza |
 
 ## Sobre 
-Descreva o seu projeto em linhas gerais. 
+Site para venda de ingressos e divulgação de eventos.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em termos de interface e funcionamento.
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
+**Linguagens**: HTML, CSS e js<br>
 **Tecnologias**: xxxxxx<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 Insira um manual ou um script para auxiliar ainda mais.
