@@ -29,7 +29,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 <b>Keanu Santos</b> - Fornecer ao usuário um site que mostre e venda ingressos para eventos separados por categoria, localidade e data de realização.
 
-<b>Victor Coutinho</b> - O principal objetivo da aplicação é a...
+<b>Victor Coutinho</b> - O principal objetivo da aplicação é centralizar e facilitar o acesso a ingressos de diversos tipos de eventos, promovendo uma experiência prática e rápida tanto para os usuários quanto para os organizadores.
  
 <b>Yago Carvalho</b> - A plataforma deve gerenciar...
 </p>
@@ -45,7 +45,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 <b>Keanu Santos</b> - Haverá dois tipo de usuários: usuário comum e organizador de eventos. O processo de registro pede nome, senha, email, endereço. O usuário também podera escolher suas categorias favoritas. O usuário que optar por organizador, além dos dados de registro, deverá fornecer um arquivo contendo algo que comprove que ele é um artista ou empresa de eventos como: CPNJ, site, rede social ou vídeos e fotos de eventos realizados.
 
-<b>Victor Coutinho</b> - O cliente...
+<b>Victor Coutinho</b> - O cliente deverá preencher um formulário com nome completo, email, CPF, data de nascimento e senha. Após isso, poderá adicionar suas preferências de eventos e escolher um método de pagamento. Caso deseje se cadastrar como organizador, será necessário enviar documentos adicionais que comprovem sua atuação profissional.
  
 <b>Yago Carvalho</b> - O cliente...
  
@@ -60,7 +60,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 <b>Keanu Santos</b> - O artista, com o login de organizador, consegurirá adicionar eventos através de um botão no header ou em seu perfil, na parte de gerenciar eventos.
  
-<b>Victor Coutinho</b> - O produto....
+<b>Victor Coutinho</b> - O produto contará com uma interface exclusiva para organizadores, onde eles poderão cadastrar novos eventos informando nome, data, horário, local, preço, descrição e categoria. Eles também poderão subir imagens de divulgação e definir regras específicas para ingressos, como meia-entrada ou lotes promocionais.
 
 <b>Yago Carvalho</b> - 
 
@@ -75,7 +75,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 <b>Keanu Santos</b> - Eventos próximos do local onde reside, eventos com descontos ou com a categoria escolhida pelo cliente durante seu cadastro.
 
-<b>Victor Coutinho</b> - O cliente...
+<b>Victor Coutinho</b> - O cliente poderá visualizar eventos filtrados por localização, categoria e data. Também será possível ver avaliações de outros usuários, mapa do local do evento, opções de assento (se aplicável), além de notificações sobre eventos que se encaixam nos seus interesses.
 
 <b>Yago Carvalho</b> - O cliente...
  
@@ -89,7 +89,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 <b>Keanu Santos</b> - Cartão, boleto e pix.
 
-<b>Victor Coutinho</b> - O cliente...
+<b>Victor Coutinho</b> - O cliente poderá escolher entre cartão de crédito, débito, pix, boleto bancário e carteiras digitais como PayPal ou PicPay, para oferecer mais flexibilidade no pagamento.
 
 <b>Yago Carvalho</b> - O cliente...
  
@@ -101,7 +101,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 <b>Keanu Santos</b> - Se digital, estará disponível em "minhas compras", no perfil do usuário. Caso o ingresso seja impresso, o cliente deverá receber um email com orientações para retirar seu ingresso.
 
-<b>Victor Coutinho</b> - O cliente...
+<b>Victor Coutinho</b> - O cliente terá acesso ao ingresso diretamente pela sua conta no site, podendo visualizar um QR Code ou código de barras digital. Também poderá baixar em PDF. Para eventos que exigem ingresso físico, será enviado um email com as instruções de retirada ou entrega via correio, se disponível.
 
 <b>Yago Carvalho</b> - O cliente...
 
@@ -113,7 +113,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 <b>Keanu Santos</b> - Para ser reembolsado o cliente deve solicitar reembolso e colocar o motivo da solicitação. Caso a compra tenha sido via pix, o usuário deverá fazer o upload do comprovante. O usuário poderá optar por receber o dinheiro de volta ou ganhar crédito na plataforma. Caso o usuário decida trocar o ingresso, ele poderá decidir ser redirecionado para uma página filtrada com eventos em que o ingresso tenha valor igual ao dele ou optar por utilizar como parte do pagamento do ingresso de outro evento, pagando somente a diferença.
 
-<b>Victor Coutinho</b> - O cliente...
+<b>Victor Coutinho</b> - O cliente poderá acessar a área de “Minhas Compras” e solicitar reembolso ou troca. Deverá indicar o motivo da solicitação. O sistema verificará se o pedido está dentro do prazo e, se aprovado, o valor poderá ser estornado via mesmo método de pagamento ou convertido em crédito para uso futuro na plataforma.
 
 <b>Yago Carvalho</b> - O cliente...
  
