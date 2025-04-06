@@ -1,4 +1,4 @@
-# RepositorioTemplate
+# Repositório Grupo IV - Ingressou.com
 Esse repositório é para ser utilizado pelos grupos como um template inicial, da home page do Projeto.
 **!! Atenção: Renomeie o seu repositório para 2025_Grupo IV_(NomeDoProjeto). !!** 
 
