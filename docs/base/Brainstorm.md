@@ -71,7 +71,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <p align = "justify">
 <b>Ana Clara</b> - Com a localização...
  
-<b>Gabriel Barreto</b> - O cliente...
+<b>Gabriel Barreto</b> - Os eventos mais próximos da localização do cliente, eventos de tempo limitado, desconto e promoções e turnê de artistas pela cidade.
  
 <b>Keanu Santos</b> - Eventos próximos do local onde reside, eventos com descontos ou com a categoria escolhida pelo cliente durante seu cadastro.
 
@@ -85,7 +85,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <p align = "justify">
 <b>Ana Clara</b> - Com a localização...
  
-<b>Gabriel Barreto</b> - O cliente...
+<b>Gabriel Barreto</b> - Cartão, boleto e pix.
  
 <b>Keanu Santos</b> - Cartão, boleto e pix.
 
@@ -97,7 +97,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <p align = "justify">
 <b>Ana Clara</b> - Com a localização...
  
-<b>Gabriel Barreto</b> - O cliente...
+<b>Gabriel Barreto</b> - O cliente terá os ingressos "salvos" em sua conta no nosso site. O cliente poderá acessar uma versão digital do seu ingresso ou baixá-lo em PDF para imprimir no papel.
  
 <b>Keanu Santos</b> - Se digital, estará disponível em "minhas compras", no perfil do usuário. Caso o ingresso seja impresso, o cliente deverá receber um email com orientações para retirar seu ingresso.
 
@@ -109,7 +109,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto via..., começou .
 <p align = "justify">
 <b>Ana Clara</b> - Com a localização...
  
-<b>Gabriel Barreto</b> - O cliente...
+<b>Gabriel Barreto</b> - O cliente poderá fazer um pedido de reembolso na plataforma, em uma seção específica com todas as compras feitas por ele. Através dessa aba, o cliente poderá solicitar reembolso explicando o motivo. Se o pedido de reembolso for imediatamente após a compra ele será processado na hora, se foi dias após a compra, o motivo do estorno será analisado. O usuário poderá receber o dinheiro de volta ou optar por ganhar crédito. Se o usuário deseja trocar o ingresso, ele poderá trocar por um outro ingresso de mesmo valor ou comprar um ingresso mais caro, usando o valor do ingresso trocado como desconto.
  
 <b>Keanu Santos</b> - Para ser reembolsado o cliente deve solicitar reembolso e colocar o motivo da solicitação. Caso a compra tenha sido via pix, o usuário deverá fazer o upload do comprovante. O usuário poderá optar por receber o dinheiro de volta ou ganhar crédito na plataforma. Caso o usuário decida trocar o ingresso, ele poderá decidir ser redirecionado para uma página filtrada com eventos em que o ingresso tenha valor igual ao dele ou optar por utilizar como parte do pagamento do ingresso de outro evento, pagando somente a diferença.
 
