@@ -10,7 +10,7 @@ O brainstorm é uma técnica de elicitação de requisitos que consiste em reuni
  
 ## Metodologia
 <p align = "justify">
-A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencial na faculdade no dia 03/04/2025, começou 4:00 PM e terminou 5:00 PM, onde Gabriel e Keanu foram moderadores, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
+A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencial na faculdade no dia 03/04/2025 e pelo WhatsApp no dia 06/04/2025, começou 4:00 PM e terminou 5:00 PM, onde Gabriel e Keanu foram moderadores, direcionando a equipe com questões pré-elaboradas, e transcrevendo as respostas para o documento.
 </p>
  
 ## Brainstorm
