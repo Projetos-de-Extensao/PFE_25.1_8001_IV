@@ -31,7 +31,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 
 <b>Victor Coutinho</b> - O principal objetivo da aplicação é centralizar e facilitar o acesso a ingressos de diversos tipos de eventos, promovendo uma experiência prática e rápida tanto para os usuários quanto para os organizadores.
  
-<b>Yago Carvalho</b> - A plataforma deve gerenciar...
+<b>Yago Carvalho</b> - A plataforma facilitará o gerenciamento dos eventos, por parte dos produtores e consumidores, com acessos intuítivos e banners bem chamativos, para que você possa escolher seu tipo preferido de confraternização. Tanto na hora de organizar quanto na hora de curtir.
 </p>
  
 ---
@@ -47,7 +47,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 
 <b>Victor Coutinho</b> - O cliente deverá preencher um formulário com nome completo, email, CPF, data de nascimento e senha. Após isso, poderá adicionar suas preferências de eventos e escolher um método de pagamento. Caso deseje se cadastrar como organizador, será necessário enviar documentos adicionais que comprovem sua atuação profissional.
  
-<b>Yago Carvalho</b> - O cliente...
+<b>Yago Carvalho</b> - Ao cliente, será proposto um setor com o formulário que pedirá suas credenciais, como: Nome-Sobrenome, Telefone, Comprovantes(CPF, Google2Steps etc) e Endereço.
  
 ---
  
@@ -62,7 +62,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 <b>Victor Coutinho</b> - O produto contará com uma interface exclusiva para organizadores, onde eles poderão cadastrar novos eventos informando nome, data, horário, local, preço, descrição e categoria. Eles também poderão subir imagens de divulgação e definir regras específicas para ingressos, como meia-entrada ou lotes promocionais.
 
-<b>Yago Carvalho</b> - 
+<b>Yago Carvalho</b> - O produto ficará localizado em uma página diferente, que será acessada por "Eventos Disponíveis", um setor da página que demarca os limites da página Home. Nesta nova página, os produtos são exibidos em 3, na horizontal, com as informações sob suas imagens: Ex.(Nome do espetáculo, Artista, Endereço/Hora).
 
  
 ---
@@ -77,7 +77,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 
 <b>Victor Coutinho</b> - O cliente poderá visualizar eventos filtrados por localização, categoria e data. Também será possível ver avaliações de outros usuários, mapa do local do evento, opções de assento (se aplicável), além de notificações sobre eventos que se encaixam nos seus interesses.
 
-<b>Yago Carvalho</b> - O cliente...
+<b>Yago Carvalho</b> - A localização, o horário e o seu ingresso estarão disponíveis na zona do seu Perfil onde estará o banner do evento, acima de algum QrCode (Ou exigência do evento). 
  
 ---
  
@@ -91,7 +91,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 
 <b>Victor Coutinho</b> - O cliente poderá escolher entre cartão de crédito, débito, pix, boleto bancário e carteiras digitais como PayPal ou PicPay, para oferecer mais flexibilidade no pagamento.
 
-<b>Yago Carvalho</b> - O cliente...
+<b>Yago Carvalho</b> - O cliente poderá escolher entre cartão de crédito, débito, pix, boleto bancário e carteiras digitais como PayPal ou PicPay, para oferecer mais flexibilidade no pagamento.
  
 ### 6. Como seria a forma de entrega dos ingressos?
 <p align = "justify">
@@ -103,7 +103,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 
 <b>Victor Coutinho</b> - O cliente terá acesso ao ingresso diretamente pela sua conta no site, podendo visualizar um QR Code ou código de barras digital. Também poderá baixar em PDF. Para eventos que exigem ingresso físico, será enviado um email com as instruções de retirada ou entrega via correio, se disponível.
 
-<b>Yago Carvalho</b> - O cliente...
+<b>Yago Carvalho</b> - O cliente poderá ter acesso aos ingressos acessando a sua aba Perfil, além de recebe-los todos apartir do e-mail cadastrado.
 
 ### 7. Qual será o processo de reembolso ou troca de ingressos?
 <p align = "justify">
@@ -115,7 +115,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 
 <b>Victor Coutinho</b> - O cliente poderá acessar a área de “Minhas Compras” e solicitar reembolso ou troca. Deverá indicar o motivo da solicitação. O sistema verificará se o pedido está dentro do prazo e, se aprovado, o valor poderá ser estornado via mesmo método de pagamento ou convertido em crédito para uso futuro na plataforma.
 
-<b>Yago Carvalho</b> - O cliente...
+<b>Yago Carvalho</b> - Na parte inferior do seu ingresso, logo após o Qr-Coe/Exigência haverá o botão "Reembolsar". Possibilitando o reembolso imediato para Pix,Boletos-Aprovados ou que um chamado seja enviado para o banco que é de direito analisar compras feitas no cartão de crédito ultilizado.
  
 ### Requisitos elicitados
  
