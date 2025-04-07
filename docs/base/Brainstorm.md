@@ -22,7 +22,8 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 ### 1. Qual o objetivo principal da aplicação?
  
 <p align = "justify">
-<b>Ana Clara</b> - O objetivo da aplicação é....
+<b>Ana Clara</b> - O objetivo da nossa plataforma é oferecer um serviço de venda de ingressos para eventos que seja ágil, acessível e eficiente, tanto para os usuários quanto para os organizadores. Através do nosso site, os usuários poderam facilmente encontrar e comprar ingressos para uma ampla variedade de eventos, filtrando por categoria, localidade e data. Para os organizadores, a plataforma oferece ferramentas intuitivas para o gerenciamento de eventos, incluindo banners atrativos que ajudam a promover a visibilidade e publicidade dos artistas e eventos.
+
 
 <b>Gabriel Barreto</b> - O objetivo é fornecer um serviço para venda de ingressos que torne possível facilitar a compra de ingressos para diversos tipos de eventos e também aumentar a publicidade dos artistas que utilizarem dos nossos serviços.
 </p>
@@ -39,7 +40,8 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 ### 2. Como será o processo para cadastrar um novo usuário?
  
 <p align = "justify">
-<b>Ana Clara</b> - Com o usuário deverá...
+<b>Ana Clara</b> - O processo de registro na plataforma exige que o cliente preencha um formulário com informações pessoais, como nome completo, e-mail, CPF, data de nascimento e um endereço. Além disso, sem necessidade de registrar um método de pagamento no registro
+
 
 <b>Gabriel Barreto</b> - O cliente deverá preencher seu email com alguns dados pessoais seus como CPF, RG, data de nascimento. Em seguida, deverá registrar algum meio de pagamento para poder comprar os ingressos, ou optar por meios como pix, boleto, etc.
  
@@ -54,7 +56,8 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 ### 3. Como será a forma de adicionar eventos?
  
 <p align = "justify">
-<b>Ana Clara</b> - O produto....
+<b>Ana Clara</b> - Os organizadores deverão criar uma conta com os mesmos dados pessoais exigidos para a criação de uma conta de cliente, exceto que se necessário deveram incluir um cnpj. Contudo, em certos tipos de eventos o organizador deverá entrar em contato com nossa equipe para confirmar a identidade  da atração
+
 
 <b>Gabriel Barreto</b> - Os artistas (ou seus representantes) irão criar uma conta com os mesmos dados pessoais necessários parar criar uma conta de cliente, mas precisarão entrar em contato com nossa equipe para confirmar sua identidade como artistas (ou seus representante). A partir disso, poderão publicar suas apresentações em nossa plataforma.
  
@@ -69,7 +72,8 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 ### 4. Quais informações seriam interessantes para o cliente?
 <p align = "justify">
-<b>Ana Clara</b> - Com a localização...
+<b>Ana Clara</b> - Os clientes terão acesso a informações sobre os eventos mais próximos de sua localização, eventos com tempo limitado, descontos e promoções, também poderão visualizar eventos filtrados por localização, categoria e data, além de poder conferir avaliações de outros usuários, o mapa do local do evento e receber notificações sobre eventos que correspondem aos seus interesses.
+
  
 <b>Gabriel Barreto</b> - Os eventos mais próximos da localização do cliente, eventos de tempo limitado, desconto e promoções e turnê de artistas pela cidade.
  
@@ -83,7 +87,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 ### 5. Quais os principais métodos de pagamento do site?
 <p align = "justify">
-<b>Ana Clara</b> - Com a localização...
+<b>Ana Clara</b> - possíveis métodos de pagamento: pix, cartão de credito e debito, boleto, paypal e vale-cultura
  
 <b>Gabriel Barreto</b> - Cartão, boleto e pix.
  
@@ -95,7 +99,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
  
 ### 6. Como seria a forma de entrega dos ingressos?
 <p align = "justify">
-<b>Ana Clara</b> - Com a localização...
+<b>Ana Clara</b> - O cliente terá todos os seus ingressos salvos diretamente em sua conta no site para que não haja nenhum problema. Ele poderá acessar uma versão digital do ingresso ou baixá-lo em formato PDF para impressão.
  
 <b>Gabriel Barreto</b> - O cliente terá os ingressos "salvos" em sua conta no nosso site. O cliente poderá acessar uma versão digital do seu ingresso ou baixá-lo em PDF para imprimir no papel.
  
@@ -107,7 +111,7 @@ A equipe se reuniu para debater ideias gerais sobre o projeto de forma presencia
 
 ### 7. Qual será o processo de reembolso ou troca de ingressos?
 <p align = "justify">
-<b>Ana Clara</b> - Com a localização...
+<b>Ana Clara</b> - Será solicitado diretamente na plataforma, acessando sua aba de perfil. A partir dessa aba, será possível pedir o reembolso explicando o motivo da solicitação. caso o pedido seja feito por pix só será necessário apresentar o comprovante, já para outros meios de pagamento, uma analise será feita.
  
 <b>Gabriel Barreto</b> - O cliente poderá fazer um pedido de reembolso na plataforma, em uma seção específica com todas as compras feitas por ele. Através dessa aba, o cliente poderá solicitar reembolso explicando o motivo. Se o pedido de reembolso for imediatamente após a compra ele será processado na hora, se foi dias após a compra, o motivo do estorno será analisado. O usuário poderá receber o dinheiro de volta ou optar por ganhar crédito. Se o usuário deseja trocar o ingresso, ele poderá trocar por um outro ingresso de mesmo valor ou comprar um ingresso mais caro, usando o valor do ingresso trocado como desconto.
  
