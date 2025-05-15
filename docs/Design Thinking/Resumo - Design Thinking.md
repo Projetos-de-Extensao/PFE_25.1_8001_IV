@@ -1,4 +1,4 @@
 
-# Resumo - Design Thinkin
+# Resumo - Design Thinking
 
 # Editar
