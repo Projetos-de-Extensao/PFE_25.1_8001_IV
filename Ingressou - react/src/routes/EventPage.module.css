@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.pageContainer {
+    width: 60vw;
+    /* background-color: red; */
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.imgPreview {
+    width: 100%;
+    height: 600px;
+    background-color: blue;
+    margin: 0 auto;
+}
+
+.imgSize {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eventInformation {
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column; 
+    align-items: start;
+    margin-bottom: 50px;
+}
+
+.descriptionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.descriptionBackground {
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.finalInformation {
+        margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.localDate {
+    text-align: left;
+}
+
+.eventHour {
+    display: inline;
+    background-color: #185DC4;
+    text-align: left;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.valueAndButton {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pStyle {
+    display: flex;
+    align-items: center;
+}
+
+.buyButton {
+    width: 100px;
+    height: 37px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.buyButton:hover {
+    background-color: rgb(187, 255, 86);
+    transform: scale(1.01);
+}
+
+.linkStyle {
+    text-decoration: none;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #000;
+}
+
+.linkStyle:hover {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #185DC4;
+    color: #fff;
+    transition: 0.5s;
+}

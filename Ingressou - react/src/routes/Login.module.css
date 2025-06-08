@@ -1,0 +1,117 @@
+.loginBody {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer {
+    width: 40%;
+    height: 80%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #DBD5D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.saudation {
+    color: #185DC4;
+    font-size: 30px;
+}
+
+.orientation {
+    font-size: 20px;
+    /* margin-top: -20px; */
+}
+
+.inputStyle {
+    outline: none;
+    border: none;
+    background-color: #ebebeb;
+    padding: 10px;
+    width: 50%;
+}
+
+.rememberPass {
+    /* background-color: red; */
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #1564db;
+    /* margin-right: 1px; */
+    margin-top: 8px;
+}
+
+.label:after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    width: 3px;
+    height: 10px;
+    border: solid #fff;
+    display: inline-block;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+input:checked + label:before{
+    background-color: #185DC4;
+}
+input:checked + label:after {
+    opacity: 1;
+    
+}
+
+.loginBtn {
+    width: 100px; 
+    height: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #185DC4;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.loginBtn:hover {
+    transform: scale(1.05);
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: #185DC4;
+    font-weight: 600;
+}
+
+.linkStyle:hover {
+    color: #0a1c36;
+}

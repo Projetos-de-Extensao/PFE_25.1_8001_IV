@@ -43,6 +43,11 @@
 
 }
 
+.precoDetalhesFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .preco {
     font-size: 20px;
 }
@@ -83,20 +88,28 @@
 
 .eventoCategoriaMusica {
     background-color: blue;
-    width: 38px;
+    /* width: 50px; */
 }
 
 .eventoCategoriaEsporte {
     background-color: green;
-    width: 45px;
+    /* width: 45px; */
 }
 
 .eventoCategoriaTeatro {
     background-color: rgb(182, 34, 34);
-    width: 2rem;
+    /* width: 2rem; */
 }
 
 .eventoCategoriaComedia {
     background-color: yellow;
-    width: 2rem;
+    /* width: 2rem; */
+}
+
+.eventoDescricao {
+    text-align: left;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }

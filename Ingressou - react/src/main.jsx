@@ -3,8 +3,35 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Login from './routes/Login.jsx'
+import Home from './routes/Home.jsx'
+import Register from './routes/Register.jsx'
+import Search from './routes/Search.jsx'
+import InsertEvent from './components/InsertEvent.jsx'
+import EventPage from './routes/EventPage.jsx'
+import { UserProvider } from './context/UserContext.jsx';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'home', element: <Home /> },
+      { path: 'login', element: <Login /> },
+      { path: 'register', element: <Register /> },
+      { path: 'search', element: <Search /> },
+      { path: 'insert', element: <InsertEvent /> },
+      { path: 'event', element: <EventPage /> }
+    ]
+  }
+]);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <UserProvider>
+      <RouterProvider router={router} />
+    </UserProvider>
   </StrictMode>,
 )

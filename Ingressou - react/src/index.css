@@ -3,4 +3,6 @@
 #root {
   font-family: 'Poppins';
   background-color: rgb(245, 244, 244);
+  margin: 0 auto;
+  font-size: 15px;
 }

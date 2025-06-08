@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.registerBody {
+    max-width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerContainer {
+    width: 40%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #DBD5D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.saudation {
+    color: #185DC4;
+    font-size: 30px;
+}
+
+.orientation {
+    font-size: 20px;
+}
+
+.formStyle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputStyle {
+    width: 50%;
+    outline: none;
+    border: none;
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+.inputStyle:hover {
+    background-color: #e0e0e0;
+}
+
+.userTypeDiv {
+    background-color: #F9F9F9;
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.radioButtons {
+    display: flex;
+    gap: 20px;
+}
+
+.labelStyle {
+    margin-right: 5px;
+}
+
+.registerBtn {
+    width: 100px; 
+    height: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #185DC4;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.registerBtn:hover {
+    transform: scale(1.05);
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: #185DC4;
+    font-weight: 600;
+}
+
+.linkStyle:hover {
+    color: #0a1c36;
+}

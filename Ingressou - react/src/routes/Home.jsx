@@ -1,11 +1,13 @@
 import styles from './Home.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMusic, faBasketball, faMasksTheater, faFaceLaughBeam, faUmbrellaBeach, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import Event from './Event';
+import Event from '../components/Event';
+import Carousel from '../components/Carousel';
 
 function Home() {
     return (
         <>
+            <Carousel />
             <section className={styles.categorias}>
                 <h2 className={styles.tituloSeccao}>CATEGORIAS</h2>
 
