@@ -1,0 +1,9 @@
+.carouselSize {
+    width: 70%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.slideSize {
+    width: 100%;
+}

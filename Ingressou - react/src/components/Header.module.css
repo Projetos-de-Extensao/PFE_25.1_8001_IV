@@ -1,0 +1,136 @@
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    position: sticky;
+    z-index: 5;
+    top: 0;
+}
+
+.flexHeader {
+    max-width: 100%;
+    height: 60px;
+    /* margin-left: 80px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Estilo do header na tela de login e registro */
+.flexHeaderLr {
+    max-width: 100%;
+    height: 60px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.tituloMenu {
+    display: flex;
+    align-items: center;
+}
+
+/*Icon ingresso*/
+.faTicket {
+    margin-right: 0.5rem;
+    font-size: 18px;
+    writing-mode: vertical-rl;
+    transform: rotate(40deg);
+}
+
+.tituloHeader {
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.menuHeader {
+    padding: 1rem;
+}
+
+.menuHeader li {
+    display: inline;
+}
+
+.menuHeader a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+}
+
+/**********************PESQUISA E PROFILE*****************/
+
+.barraPesquisa {
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    border-right: none;
+    width: 207px;
+    height: 37px;
+    padding: 1px 20px 0px 5px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.lupa {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.pesquisar {
+    padding: 0px;
+    width: 42px;
+    height: 40px;
+    background-color: white;
+    color: rgb(24, 93, 196);
+    border: 1px solid rgb(24, 93, 196);
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -10px;
+}
+
+.profile {
+    border: 1px solid rgb(24, 93, 196);
+    margin: 10px;
+    padding: 5px 8px;
+    border-radius: 50%;
+}
+
+/*icon user*/
+.faUser {
+    color: rgb(24, 93, 196);
+
+}
+
+.btnStyle {
+    width: 106px;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: #185DC4;
+    border: 1px solid #185DC4;;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.regBtn {
+    width: 106px;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(24, 93, 196);
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer
+}
+
+.btnStyle:hover, .regBtn:hover {
+    transform: scale(1.03);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -1,0 +1,511 @@
+.flexCategorias {
+    display: flex;
+    justify-content: center;
+}
+
+/*.categoria {
+    border: 1px solid gray;
+    padding: 2rem 2rem 1rem 2rem;
+    margin: 2rem;
+    width: 6rem;
+    border-radius: 5%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 16px -2px rgba(197, 192, 192, 0.75);
+}*/
+
+.categoria {
+    border: 1px solid rgb(218, 212, 212);
+    padding: 1rem 2rem 0.5rem 2rem;
+    margin: 1rem;
+    width: 8rem;
+    height: 5rem;
+    border-radius: 5%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 16px -2px rgba(218, 216, 216, 0.75);
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.categoria:hover {
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    border: 1px solid rgb(24, 93, 196);
+    cursor: pointer;
+    top: -10px;
+}
+
+/********** ESTILOS DOS ICONS DAS CATEGORIAS **********/
+
+.categoriaIcon {
+    font-size: 32px;
+}
+
+.musicaIcon {
+    color: rgb(20, 94, 190);
+}
+
+.basketIcon {
+    color: green;
+}
+
+.faMasksTheater {
+    color: rgb(182, 34, 34);
+}
+
+.faFaceLaughBeam {
+    color: rgb(255, 255, 0);
+}
+
+.faUmbrellaBeach {
+    color: aqua;
+}
+
+/********FINAL ESTILO ICONS CATEGORIAS*********/
+
+.tituloCategoria {
+    margin-top: 15px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.flexEventosPrincipais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tituloSeccao2 {
+    margin: 2rem 0rem 0rem 3.8rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.flexDestaques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destaque {
+    width: 300px;
+    height: 390px;
+    margin: 1rem 0.5rem ;
+    text-wrap: wrap;
+    border-radius: 0.375rem;
+    background: white;
+    border: 1px solid lightgray;
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.destaque:hover {
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    top: -10px;
+    border: 1px solid rgb(24, 93, 196);
+}
+
+.imgEventoDestaque {
+    width: 259px;
+    height: 180px;
+}
+
+.informacoesDestaque {
+    padding: 1rem;
+}
+
+.tituloEventoDestaque{
+    margin: 0px 0px 8px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.precoDetalhesFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-eventos-principais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.evento {
+    width: 330px;
+    padding: 12px;
+    border: 1px solid lightgray;
+    margin: 12px;
+    background-color: white;
+    border-radius: 0.375rem;
+    box-shadow: 10px 10px 16px -3px rgba(222, 217, 217, 0.75);
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.evento:hover {
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    top: -10px;
+    border: 1px solid rgb(24, 93, 196);
+}
+
+.img-evento {
+    height: 200px;
+}
+
+.categoria-data-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 21px;
+    margin: 0px 0px 8px;
+}
+
+.data {
+    font-weight: 100;
+    text-align: center;
+    color: #212529BF;
+}
+
+.titulo-evento {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+
+}
+
+.preco {
+    font-size: 20px;
+}
+
+.ver-mais {
+    margin-left: 1rem;
+    background-color: white;
+    color: rgb(24, 93, 196);
+    border: 1px solid rgb(24, 93, 196);
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+}
+
+.ver-mais:hover {
+    background-color: rgb(24, 93, 196);
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/**********************FAMOSOS ESSA SEMANA*******************************/
+
+.flex-destaques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destaque {
+    width: 300px;
+    height: 390px;
+    margin: 1rem 0.5rem ;
+    text-wrap: wrap;
+    border-radius: 0.375rem;
+    background: white;
+    border: 1px solid lightgray;
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.destaque:hover {
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    top: -10px;
+    border: 1px solid rgb(24, 93, 196);
+}
+
+.img-evento-destaque {
+    width: 259px;
+    height: 180px;
+}
+
+.informacoes-destaque {
+    padding: 1rem;
+}
+
+.titulo-evento-destaque{
+    margin: 0px 0px 8px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.preco-detalhes-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexEventosPrincipais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.evento {
+    width: 330px;
+    padding: 12px;
+    border: 1px solid lightgray;
+    margin: 12px;
+    background-color: white;
+    border-radius: 0.375rem;
+    box-shadow: 10px 10px 16px -3px rgba(222, 217, 217, 0.75);
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.evento:hover {
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    top: -10px;
+    border: 1px solid rgb(24, 93, 196);
+}
+
+.imgEvento {
+    height: 200px;
+}
+
+.categoriaDataFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 21px;
+    margin: 0px 0px 8px;
+}
+
+.data {
+    font-weight: 100;
+    text-align: center;
+    color: #212529BF;
+}
+
+.tituloEvento {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.preco {
+    font-size: 20px;
+}
+
+.verMais {
+    margin-left: 1rem;
+    background-color: white;
+    color: rgb(24, 93, 196);
+    border: 1px solid rgb(24, 93, 196);
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 0.25rem;
+}
+
+.verMais:hover {
+    background-color: rgb(24, 93, 196);
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/**********************FAMOSOS ESSA SEMANA*******************************/
+
+.flexDestaques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destaque {
+    width: 300px;
+    height: 390px;
+    margin: 1rem 0.5rem;
+    text-wrap: wrap;
+    border-radius: 0.375rem;
+    background: white;
+    border: 1px solid lightgray;
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.destaque:hover {
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    top: -10px;
+    border: 1px solid rgb(24, 93, 196);
+}
+
+.imgEventoDestaque {
+    width: 259px;
+    height: 180px;
+}
+
+.informacoesDestaque {
+    padding: 1rem;
+}
+
+.tituloEventoDestaque {
+    margin: 0px 0px 8px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.precoDetalhesFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*************************EVENTOS PROXIMOS DE VOCÊ****************************/
+
+.flexEventosProximos {
+    display: flex;
+    justify-content: center;
+}
+
+.faLocationDot {
+    background-color: rgb(216, 213, 213);
+    padding: 8px 10px 10px 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 40px 0px 0px 60px;
+}
+
+.locais {
+    width: 60rem;
+    height: 37px;
+    border-radius: 5px;
+}
+
+/***********EVENTOS-LOCAL*************/
+
+.flexEventoLocal {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.eventoLocal {
+    display: flex;
+    width: 546px;
+    height: 180px;
+    margin: 12px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 16px -3px rgba(189, 186, 186, 0.75);
+    position: relative;
+    top: 0;
+    transition: top 0.5s ease;
+}
+
+.eventoLocal:hover {
+    top: -10px;
+    border: 1px solid rgb(24, 93, 196);
+    box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.imgEventoLocal {
+    width: 181.33px;
+}
+
+.detalhesEventoLocal {
+    padding: 16px;
+    width: 100%;
+}
+
+.eventoCategoriaLocal {
+    margin: 0px 3rem 0rem 0rem;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.eventoCategoriaComedia {
+    background-color: yellow;
+    width: 5rem;
+}
+
+.tituloEventoLocal {
+    padding: 0px;
+    margin: 0px 0px 8px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.local {
+    margin: 0px 0px 1rem;
+    margin: 0px;
+}
+
+.flexPrecoDetalhesLocal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.verMaisEventoLocal {
+    background-color: white;
+    color: rgb(24, 93, 196);
+    border: 1px solid rgb(24, 93, 196);
+    font-size: 15px;
+    padding: 4px 8px;
+}
+
+.verMaisEventoLocal:hover {
+    background-color: rgb(24, 93, 196);
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.flexVerTodosLocal {
+    display: flex;
+    justify-content: center;
+}
+
+.botaoVerTodosLocal {
+    background-color: white;
+    color: rgb(24, 93, 196);
+    border: 1px solid rgb(24, 93, 196);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 30px 0px;
+}
+
+.botaoVerTodosLocal:hover {
+    background-color: rgb(24, 93, 196);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: black;
+}
+
+.eventoCategoria {
+    font-size: 12px;
+    padding: 3px 7.8px;
+    border-radius: 10%;
+    color: white;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.eventoCategoriaTeatro {
+    background-color: rgb(182, 34, 34);
+    width: 5rem;
+}
