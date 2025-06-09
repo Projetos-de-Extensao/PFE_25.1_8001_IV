@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "nome": "Festival de Música",
+    "descricao": "Um festival de música de 3 dias com grandes artistas do mundo todo.",
+    "categoria": "Musica",
+    "organizador": "Produtora XYZ",
+    "localizacao": "Rio de Janeiro",
+    "dataHora": "2025-12-12T18:00:00",
+    "preco": 89.99,
+    "imagemUrl": "/assets/testImages/festival-musica.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Peça de Teatro",
+    "descricao": "Uma peça emocionante com atores renomados.",
+    "categoria": "Teatro",
+    "organizador": "Cia Teatral ABC",
+    "localizacao": "São Paulo",
+    "dataHora": "2025-11-20T20:30:00",
+    "preco": 60.00,
+    "imagemUrl": "/assets/testImages/teatro.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Campeonato de Esportes",
+    "descricao": "Competição esportiva com times de todo o Brasil.",
+    "categoria": "Esporte",
+    "organizador": "Federação Esportiva",
+    "localizacao": "Minas Gerais",
+    "dataHora": "2025-10-05T15:00:00",
+    "preco": 45.50,
+    "imagemUrl": "/assets/testImages/esporte.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Noite de Comédia",
+    "descricao": "Stand-up comedy com os melhores humoristas.",
+    "categoria": "Comedia",
+    "organizador": "Comedy Club",
+    "localizacao": "Rio de Janeiro",
+    "dataHora": "2025-09-15T21:00:00",
+    "preco": 35.00,
+    "imagemUrl": "/assets/testImages/comedia.jpg"
+  },
+  
+  {
+    "id": 5,
+    "nome": "Workshop de Fotografia",
+    "descricao": "Aprenda técnicas de fotografia com profissionais renomados.",
+    "categoria": "Workshop",
+    "organizador": "FotoPro",
+    "localizacao": "Curitiba",
+    "dataHora": "2025-08-22T09:00:00",
+    "preco": 120.00,
+    "imagemUrl": "/assets/testImages/fotografia.jpg"
+  },
+  {
+    "id": 6,
+    "nome": "Feira de Tecnologia",
+    "descricao": "Exposição das últimas tendências em tecnologia e inovação.",
+    "categoria": "Tecnologia",
+    "organizador": "TechFeira",
+    "localizacao": "Porto Alegre",
+    "dataHora": "2025-07-10T10:00:00",
+    "preco": 50.00,
+    "imagemUrl": "/assets/testImages/tecnologia.jpg"
+  },
+  {
+    "id": 7,
+    "nome": "Encontro Literário",
+    "descricao": "Debates e palestras com autores nacionais.",
+    "categoria": "Literatura",
+    "organizador": "Livros & Cia",
+    "localizacao": "Salvador",
+    "dataHora": "2025-09-05T14:00:00",
+    "preco": 30.00,
+    "imagemUrl": "/assets/testImages/literatura.jpg"
+  },
+  {
+    "id": 8,
+    "nome": "Festival Gastronômico",
+    "descricao": "Sabores do Brasil reunidos em um só lugar.",
+    "categoria": "Gastronomia",
+    "organizador": "SaboresBR",
+    "localizacao": "Belo Horizonte",
+    "dataHora": "2025-11-12T12:00:00",
+    "preco": 70.00,
+    "imagemUrl": "/assets/testImages/gastronomia.jpg"
+  },
+  {
+    "id": 9,
+    "nome": "Mostra de Cinema Independente",
+    "descricao": "Filmes de novos diretores brasileiros.",
+    "categoria": "Cinema",
+    "organizador": "CineIndie",
+    "localizacao": "Recife",
+    "dataHora": "2025-10-18T19:00:00",
+    "preco": 40.00,
+    "imagemUrl": "/assets/testImages/cinema.jpg"
+  },
+  {
+    "id": 10,
+    "nome": "Congresso de Saúde",
+    "descricao": "Palestras e workshops sobre saúde e bem-estar.",
+    "categoria": "Saúde",
+    "organizador": "Saúde+",
+    "localizacao": "Brasília",
+    "dataHora": "2025-12-01T08:00:00",
+    "preco": 150.00,
+    "imagemUrl": "/assets/testImages/saude.jpg"
+  }
+]
