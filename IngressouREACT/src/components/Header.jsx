@@ -20,7 +20,7 @@ function Header() {
 
                     <div className={styles.flexHeader}>
                         <div className={styles.tituloMenu}>
-                            <FontAwesomeIcon icon={faTicket} />
+                            <div className={styles.logo}><FontAwesomeIcon icon={faTicket} /></div>
                             <Link to="/" className={styles.tituloHeader}><h1 >INGRESSOU</h1></Link>
                         </div>
                         <div className={styles.buttons}>
@@ -38,7 +38,7 @@ function Header() {
                 <header>
                     <div className={styles.flexHeader}>
                         <div className={styles.tituloMenu}>
-                            <FontAwesomeIcon icon={faTicket} />
+                            <div className={styles.logo}><FontAwesomeIcon icon={faTicket} /></div>
                             <Link to="/" className={styles.tituloHeader}><h1 >INGRESSOU</h1></Link>
                         </div>
                         <div className={styles.buttons}>
@@ -55,7 +55,7 @@ function Header() {
             <header>
                 <div className={styles.flexHeader}>
                     <div className={styles.tituloMenu}>
-                        <FontAwesomeIcon icon={faTicket} />
+                        <div className={styles.logo}><FontAwesomeIcon icon={faTicket} /></div>
                         <Link to="/" className={styles.tituloHeader}><h1 >INGRESSOU</h1></Link>
                         <ul className={styles.menuHeader}>
                             <a href="#">

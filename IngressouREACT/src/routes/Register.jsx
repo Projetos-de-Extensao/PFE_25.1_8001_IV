@@ -48,7 +48,7 @@ function Register({ onRegistered }) {
                             <div className={styles.radioButtons}>
                                 <label htmlFor="comum">
                                     <input type="radio" id="comum" className={styles.labelStyle} name="option"></input>
-                                    Comum
+                                    Consumidor
                                 </label>
 
                                 <label htmlFor="organizador">

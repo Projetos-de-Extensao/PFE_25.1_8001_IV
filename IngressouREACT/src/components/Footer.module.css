@@ -1,26 +1,28 @@
-.flexFooter{
+.flexFooter {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    flex-wrap: wrap; 
+    padding: 0 10px; 
 }
 
-.logoDescricaoSocial{
-    width: 420px;
+.logoDescricaoSocial {
+    width: 420px; 
     padding: 0px 12px;
 }
 
-.logo{
+.logo {
     display: flex;
+
+}
+
+.iconLogoFooter {
+    font-size: 20px;
+    margin-top: 10px;
     
 }
 
-.iconLogoFooter{
-    font-size: 20px;
-    margin-top: 10px;
-
-}
-
-.tituloFooter{
+.tituloFooter {
     margin: 5px;
     font-size: 24px;
 }
@@ -30,24 +32,25 @@
     gap: 10px;
 }
 
-.socialIcon{
+.socialIcon {
     background-color: #21252925;
     padding: 18px;
     border-radius: 100%;
     font-size: 18px;
 }
 
-.categoriasFooter{
-    width: 220px;
+.categoriasFooter {
+    width: 220px; 
     padding: 0px 12px;
 }
 
-.tituloCategoriasFooter{
+.tituloCategoriasFooter {
     font-size: 20px;
     font-weight: 500;
 }
 
-.listaCategorias, .listaCategorias > a{
+.listaCategorias,
+.listaCategorias > a {
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -55,17 +58,18 @@
     text-decoration: none;
 }
 
-.footerConta{
-    width: 200px;
+.footerConta {
+    width: 200px; 
     padding: 0px 12px;
 }
 
-.tituloContaFooter{
+.tituloContaFooter {
     font-size: 20px;
     font-weight: 500;
 }
 
-.listaContaFooter, .listaContaFooter > a{
+.listaContaFooter,
+.listaContaFooter > a {
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -73,20 +77,20 @@
     text-decoration: none;
 }
 
-.newsletterFooter{
-    width: 450px;
+.newsletterFooter {
+    width: 450px; 
     padding: 0px 12px;
 }
 
-.inputNewsletterFooter{
-    width: 300px;
+.inputNewsletterFooter {
+    width: 300px; 
     padding: 12px 10px;
     border: 1px solid lightgray;
-    border-radius: 0.375rem ;
+    border-radius: 0.375rem;
 }
 
-.inscrevaSeFooter{
-    width: 106px;
+.inscrevaSeFooter {
+    width: 106px; 
     padding: 12px 12px;
     border: none;
     border-radius: 0px 5px 5px 0px;
@@ -96,8 +100,74 @@
     margin-left: -10px;
 }
 
-hr{
-    width: 1300px;
+hr {
+    width: 1300px; 
     border: 1px solid lightgray;
     margin: 0 auto;
+}
+
+    /* Media Query para telas de até 768px de largura */
+@media (max-width: 768px) {
+    .flexFooter {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        align-items: center; /* Centraliza os itens quando empilhados */
+        padding: 10px; /* Mais preenchimento em telas menores */
+    }
+
+    /* Faz com que cada seção ocupe a largura total ou uma boa parte dela */
+    .logoDescricaoSocial,
+    .categoriasFooter,
+    .footerConta,
+    .newsletterFooter {
+        width: 100%; /* Ocupa a largura total */
+        max-width: 500px; /* Opcional: Limita a largura máxima para legibilidade em telas estreitas maiores */
+        padding: 20px 15px; /* Aumenta o preenchimento vertical entre as seções */
+        text-align: center; /* Centraliza o conteúdo dentro de cada seção */
+    }
+
+    .logo {
+        justify-content: center; /* Centraliza o logo dentro de sua seção */
+    }
+
+    .social {
+        justify-content: center; /* Centraliza os ícones sociais */
+        margin-top: 15px; /* Adiciona espaço acima dos ícones sociais */
+    }
+
+    .tituloCategoriasFooter,
+    .tituloContaFooter,
+    .tituloNewsletterFooter { /* Assumindo que você tem uma classe para o título do Newsletter */
+        margin-bottom: 10px;
+    }
+
+    .listaCategorias,
+    .listaContaFooter {
+        text-align: center; /* Centraliza os itens da lista */
+    }
+
+    .inputNewsletterFooter {
+        width: 80%; /* Ajusta a largura do input para telas menores */
+        max-width: 300px; /* Mantém uma largura máxima razoável */
+        margin-bottom: 10px; /* Espaço abaixo do input antes do botão */
+        border-radius: 5px; /* Aplica border-radius em ambos os lados */
+        margin-left: 0; /* Remove a margem negativa */
+    }
+
+    .inscrevaSeFooter {
+        width: auto; /* Permite que a largura do botão se ajuste ao conteúdo */
+        margin-left: 0; /* Remove a margem negativa */
+        border-radius: 5px; /* Aplica border-radius em ambos os lados */
+    }
+
+    /* Se você tiver um container para o input e o botão, torne-o flex para alinhá-los */
+    .newsletterForm { /* Assumindo um container em torno do input e do botão */
+        display: flex;
+        flex-direction: column; /* Empilha o input e o botão */
+        align-items: center; /* Centraliza-os */
+    }
+
+    hr {
+        width: 90%; /* Torna a linha horizontal responsiva */
+        margin: 20px auto; /* Adiciona alguma margem vertical */
+    }
 }
