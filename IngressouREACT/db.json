@@ -9,7 +9,8 @@
       "localizacao": "Rio de Janeiro",
       "dataHora": "2025-12-12T18:00:00",
       "preco": 89.99,
-      "imagemUrl": "/assets/testImages/festival-musica.jpg"
+      "imagemUrl": "/assets/images/festival-musica.jpg",
+      "prioridade": "principal"
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "localizacao": "São Paulo",
       "dataHora": "2025-11-20T20:30:00",
       "preco": 60.00,
-      "imagemUrl": "/assets/testImages/teatro.jpg"
+      "imagemUrl": "/assets/images/teatro.jpg",
+      "prioridade": "principal"
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "localizacao": "Minas Gerais",
       "dataHora": "2025-10-05T15:00:00",
       "preco": 45.50,
-      "imagemUrl": "/assets/testImages/esporte.jpg"
+      "imagemUrl": "/assets/images/esporte.jpg",
+      "prioridade": "principal"
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "localizacao": "Rio de Janeiro",
       "dataHora": "2025-09-15T21:00:00",
       "preco": 35.00,
-      "imagemUrl": "/assets/testImages/comedia.jpg"
+      "imagemUrl": "/assets/images/comedia.jpg",
+      "prioridade": "destaque"
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "localizacao": "Curitiba",
       "dataHora": "2025-08-22T09:00:00",
       "preco": 120.00,
-      "imagemUrl": "/assets/testImages/fotografia.jpg"
+      "imagemUrl": "/assets/images/fotografia.jpg",
+      "prioridade": "destaque"
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
       "localizacao": "Porto Alegre",
       "dataHora": "2025-07-10T10:00:00",
       "preco": 50.00,
-      "imagemUrl": "/assets/testImages/tecnologia.jpg"
+      "imagemUrl": "/assets/images/tecnologia.jpg",
+      "prioridade": "destaque"
     },
     {
       "id": 7,
@@ -75,7 +81,7 @@
       "localizacao": "Salvador",
       "dataHora": "2025-09-05T14:00:00",
       "preco": 30.00,
-      "imagemUrl": "/assets/testImages/literatura.jpg"
+      "imagemUrl": "/assets/images/literatura.jpg"
     },
     {
       "id": 8,
@@ -86,7 +92,7 @@
       "localizacao": "Belo Horizonte",
       "dataHora": "2025-11-12T12:00:00",
       "preco": 70.00,
-      "imagemUrl": "/assets/testImages/gastronomia.jpg"
+      "imagemUrl": "/assets/images/gastronomia.jpg"
     },
     {
       "id": 9,
@@ -97,7 +103,7 @@
       "localizacao": "Recife",
       "dataHora": "2025-10-18T19:00:00",
       "preco": 40.00,
-      "imagemUrl": "/assets/testImages/cinema.jpg"
+      "imagemUrl": "/assets/images/cinema.jpg"
     },
     {
       "id": 10,
@@ -108,7 +114,7 @@
       "localizacao": "Brasília",
       "dataHora": "2025-12-01T08:00:00",
       "preco": 150.00,
-      "imagemUrl": "/assets/testImages/saude.jpg"
+      "imagemUrl": "/assets/images/saude.jpg"
     }
   ]
 }

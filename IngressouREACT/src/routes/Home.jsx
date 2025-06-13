@@ -1,10 +1,58 @@
 import styles from './Home.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMusic, faBasketball, faMasksTheater, faFaceLaughBeam, faUmbrellaBeach, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import Event from '../components/Event';
 import Carousel from '../components/Carousel';
+import EventList from '../components/EventList.jsx';
+import { fetchEvents } from '../services/api.jsx';
+import { useEffect, useState } from 'react';
 
 function Home() {
+    const [city, setCity] = useState(null);
+    const [allEvents, setAllEvents] = useState([]);
+
+    // pega a cidade do usuário
+    useEffect(() => {
+        const getUserCity = async () => {
+            try {
+                const pos = await new Promise((resolve, reject) =>
+                    navigator.geolocation.getCurrentPosition(resolve, reject)
+                );
+
+                const { latitude, longitude } = pos.coords;
+                const response = await fetch(
+                    `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`
+                );
+                const data = await response.json();
+                const userCity = data.address.city
+                setCity(userCity);
+            } catch (error) {
+                console.error("Erro ao obter cidade:", error);
+            }
+        };
+
+        getUserCity();
+    }, []);
+
+    useEffect(() => {
+        const loadEvents = async () => {
+            const eventsData = await fetchEvents();
+            setAllEvents(eventsData);
+        };
+        loadEvents();
+    }, []);
+
+    const principais = allEvents.filter(event => {
+        return event.prioridade === 'principal'
+    })
+
+    const destaques = allEvents.filter(event => {
+        return event.prioridade === 'destaque'
+    })
+
+    const proximos = allEvents.filter(event => {
+        return event.localizacao === city;
+    })
+
     return (
         <>
             <Carousel />
@@ -42,96 +90,34 @@ function Home() {
             <section className={styles.eventosPrincipais}>
                 <h2 className={styles.tituloSeccao2}>Eventos Principais</h2>
                 <div className={styles.flexEventosPrincipais}>
-                    <a href="#" className = {styles.linkStyle}>
-                        <Event />
-                    </a>
-
-                    <a href="#" className = {styles.linkStyle}>
-                        <Event />
-                    </a>
-
-                    <a href="#" className = {styles.linkStyle}>
-                        <Event />
-                    </a>
+                    <EventList
+                        events={principais}
+                    />
                 </div>
             </section>
             <section className={styles.destaques}>
                 <h2 className={styles.tituloSeccao2}>Destaques da Semana</h2>
                 <div className={styles.flexDestaques}>
                     <div className={styles.Destaque}>
-                        <a href="#" className = {styles.linkStyle}>
-                            <Event />
-                        </a>
+                        <EventList
+                            events={destaques}
+                        />
                     </div>
-
-                    <div className={styles.Destaque}>
-                        <a href="#" className = {styles.linkStyle}>
-                            <Event />
-                        </a>
-                    </div>
-
-                    <div className={styles.Destaque}>
-                        <a href="#" className = {styles.linkStyle}>
-                            <Event />
-                        </a>
-                    </div>
-
-                    <div className={styles.Destaque}>
-                        <a href="#" className = {styles.linkStyle}>
-                            <Event />
-                        </a>
-                    </div>
-
                 </div>
             </section>
 
             <section className={styles.eventosProximos}>
-                <h2 className={styles.tituloSeccao2}>Eventos Proximos de Você</h2>
-
-                <div className={styles.flexEventosProximos}>
-                    <div className={styles.escolherLocal}>
+                <div className={styles.titleAndButton}>
+                    <h2 className={styles.tituloSeccao2}>Eventos Proximos de Você</h2>
+                    <button className={styles.locationButton}
+                    >
                         <FontAwesomeIcon icon={faLocationDot} className={styles.locationDotIcon} />
-                        <label htmlFor="opcoes"></label>
-                        <select id="opcoes" className={styles.locais}>
-                            <option value="1" className={styles.local}>Rio de Janeiro</option>
-                            <option value="2" className={styles.local}>São Paulo</option>
-                            <option value="3" className={styles.local}>Minas Gerais</option>
-                        </select>
-                    </div>
+                    </button>
                 </div>
-
                 <div className={styles.flexEventoLocal}>
-                    <div className={styles.eventoLocal}>
-                        <div className={styles.imgEventoLocal}></div>
-                        <div className={styles.detalhesEventoLocal}>
-                            <div className={styles.categoriaDataFlex}>
-                                <p className={`${styles.eventoCategoria} ${styles.eventoCategoriaTeatro}`}>Teatro</p>
-                                <p className={styles.data}>12/12/2025</p>
-                            </div>
-                            <h3 className={styles.tituloEventoLocal}>Show de Comedia</h3>
-                            <p className={styles.local}>Copacabana, RJ</p>
-                            <div className={styles.flexPrecoDetalhesLocal}>
-                                <p className={styles.precoEventoLocal}>R$ 89.99</p>
-                                <button className={styles.verMaisEventoLocal}>Detalhes</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={styles.eventoLocal}>
-                        <div className={styles.imgEventoLocal}></div>
-                        <div className={styles.detalhesEventoLocal}>
-                            <div className={styles.categoriaDataFlex}>
-                                <p className={`${styles.eventoCategoriaLocal} ${styles.eventoCategoriaComedia}`}>Comedia</p>
-                                <p className={styles.data}>12/12/2025</p>
-                            </div>
-                            <h3 className={styles.tituloEventoLocal}>Show de Comedia</h3>
-                            <p className={styles.local}>Copacabana, RJ</p>
-                            <div className={styles.flexPrecoDetalhesLocal}>
-                                <p className={styles.precoEventoLocal}>R$ 89.99</p>
-                                <button className={styles.verMaisEventoLocal}>Detalhes</button>
-                            </div>
-                        </div>
-                    </div>
+                    <EventList
+                        events={proximos}
+                    />
                 </div>
 
                 <div className={styles.flexVerTodosLocal}>

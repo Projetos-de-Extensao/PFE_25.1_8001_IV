@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
@@ -16,6 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "date-fns": "^4.1.0",
+    "json-server": "^1.0.0-beta.3",
     "react": "^19.1.0",
     "react-datepicker": "^8.4.0",
     "react-dom": "^19.1.0",

@@ -1,9 +1,9 @@
 import styles from './Carousel.module.css'
 import { register } from 'swiper/element/bundle'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import um from '/src/assets/testImages/9cahrq0jqs2a1.jpg'
-import dois from '/src/assets/testImages/41ruucd6fwja1.jpg'
-import tres from '/src/assets/testImages/968885.jpg'
+import um from '/assets/images/cinema.jpg'
+import dois from '/assets/images/comedia.jpg'
+import tres from '/assets/images/esporte.jpg'
 
 register();
 import 'swiper/css';

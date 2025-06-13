@@ -19,7 +19,14 @@
 }
 
 .imgEvento {
+    width: 100%;
     height: 200px;
+    background-color: red;
+}
+
+.imgSize {
+    width: 100%;
+    height: 100%;
 }
 
 .categoriaDataFlex {

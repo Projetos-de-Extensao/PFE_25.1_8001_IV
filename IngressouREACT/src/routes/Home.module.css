@@ -72,6 +72,7 @@
 .flexEventosPrincipais {
     display: flex;
     justify-content: center;
+    /* flex-direction: row; */
     flex-wrap: wrap;
 }
 
@@ -83,7 +84,6 @@
 }
 
 .tituloSeccao2 {
-    margin: 2rem 0rem 0rem 3.8rem;
     font-size: 2rem;
     font-weight: 500;
 }
@@ -545,4 +545,24 @@
 .eventoCategoriaTeatro {
     background-color: rgb(182, 34, 34);
     width: 5rem;
+}
+
+.locationDotIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.titleAndButton {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    justify-content: center;
+    margin: 2rem 0rem 0rem 3.8rem;
+    gap: 30px;
+}
+
+.locationButton {
+    cursor: pointer;
+    padding: 5px;
+    width: 5%;
 }

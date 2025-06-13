@@ -1,28 +1,31 @@
 import styles from './Event.module.css'
+import { Link } from 'react-router-dom';
 
-function Event() {
+function Event({ event }) {
     return (
-        <>
+        <Link to={`/event/${event.id}`}>
             <div className={styles.evento}>
-                <div className={styles.imgEvento}></div>
-
-                <div className={styles.categoriaDataFlex}>
-                    <p className={`${styles.eventoCategoria} ${styles.eventoCategoriaMusica}`}>Musica</p>
-                    <p className={styles.data}>12/12/2025</p>
+                <div className={styles.imgEvento}>
+                    <img src={event.imagemUrl} alt="teste" className={styles.imgSize}></img>
                 </div>
 
-                <h3 className={styles.tituloEvento}>Festival de Musica</h3>
+                <div className={styles.categoriaDataFlex}>
+                    <p className={`${styles.eventoCategoria} ${styles.eventoCategoriaMusica}`}>{event.categoria}</p>
+                    <p className={styles.data}>{event.dataHora}</p>
+                </div>
+
+                <h3 className={styles.tituloEvento}>{event.nome}</h3>
 
                 <p className={styles.eventoDescricao}>
-                    Um festival de música de 3 dias com grandes artistas do mundo todo.
+                    {event.descricao}
                 </p>
 
                 <div className={styles.precoDetalhesFlex}>
-                    <span className={styles.preco}>R$ 89.99</span>
+                    <span className={styles.preco}>R$ {event.preco}</span>
                     <button className={styles.verMais}>Ver Mais</button>
                 </div>
             </div>
-        </>
+        </Link>
     )
 }
 
