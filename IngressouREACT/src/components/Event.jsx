@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Event({ event }) {
     return (
-        <Link to={`/event/${event.id}`}>
+        <Link to={`/event/${event.id}`} className={styles.linkStyle}>
             <div className={styles.evento}>
                 <div className={styles.imgEvento}>
                     <img src={event.imagemUrl} alt="teste" className={styles.imgSize}></img>

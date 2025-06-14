@@ -1,12 +1,20 @@
 .flexCategorias {
     display: flex;
     justify-content: center;
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* background-color: red; */
+    padding-left: 450px;
+
 }
 .categoria {
+    scroll-snap-align: start;
     border: 1px solid rgb(218, 212, 212);
     padding: 1rem 2rem 0.5rem 2rem;
-    margin: 1rem;
-    width: 8rem;
+    margin: 0.5rem;
+    width: 10rem;
     /* height: 5rem; */
     display: flex;
     flex-direction: column;
@@ -565,4 +573,27 @@
     cursor: pointer;
     padding: 5px;
     width: 5%;
+}
+
+.categoriaWrapper {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 1rem;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.arrow:hover {
+  color: #000;
 }

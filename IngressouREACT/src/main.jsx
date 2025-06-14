@@ -23,7 +23,8 @@ const router = createBrowserRouter([
       { path: 'register', element: <Register /> },
       { path: 'search', element: <Search /> },
       { path: 'insert', element: <InsertEvent /> },
-      { path: 'event/:id', element: <EventPage /> }
+      { path: 'event/:id', element: <EventPage /> },
+      { path: 'search/:categoria', element: <Search /> },
     ]
   }
 ]);

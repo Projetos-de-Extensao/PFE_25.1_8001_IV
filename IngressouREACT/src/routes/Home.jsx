@@ -4,13 +4,13 @@ import { faMusic, faBasketball, faMasksTheater, faFaceLaughBeam, faUmbrellaBeach
 import Carousel from '../components/Carousel';
 import EventList from '../components/EventList.jsx';
 import { fetchEvents } from '../services/api.jsx';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
     const [city, setCity] = useState(null);
     const [allEvents, setAllEvents] = useState([]);
 
-    // pega a cidade do usuário
     useEffect(() => {
         const getUserCity = async () => {
             try {
@@ -53,37 +53,95 @@ function Home() {
         return event.localizacao === city;
     })
 
+    const scrollRef = useRef(null);
+
+    const scrollLeft = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({ left: -200, behavior: 'smooth' });
+        }
+    };
+
+    const scrollRight = () => {
+        if (scrollRef.current) {
+            scrollRef.current.scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    };
     return (
         <>
             <Carousel />
             <section className={styles.categorias}>
                 <h2 className={styles.tituloSeccao}>CATEGORIAS</h2>
+                <div className={styles.categoriaWrapper}>
+                    <button className={styles.arrow} onClick={scrollLeft}>&lt;</button>
+                    <div className={styles.flexCategorias} ref={scrollRef} >
+                        <Link to={`search/Musica`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faMusic} className={`styles.categoriaIcon ${styles.musicaIcon}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Musica</h3>
+                            </div>
+                        </Link>
 
-                <div className={styles.flexCategorias}>
-                    <div className={styles.categoria}>
-                        <FontAwesomeIcon icon={faMusic} className={`styles.categoriaIcon ${styles.musicaIcon}`}></FontAwesomeIcon>
-                        <h3 className={styles.tituloCategoria}>Musica</h3>
-                    </div>
+                        <Link to={`search/Esporte`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faBasketball} className={`styles.categoriaIcon ${styles.basketIcon}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Esportes</h3>
+                            </div>
+                        </Link>
 
-                    <div className={styles.categoria}>
-                        <FontAwesomeIcon icon={faBasketball} className={`styles.categoriaIcon ${styles.basketIcon}`}></FontAwesomeIcon>
-                        <h3 className={styles.tituloCategoria}>Esportes</h3>
-                    </div>
 
-                    <div className={styles.categoria}>
-                        <FontAwesomeIcon icon={faMasksTheater} className={`styles.categoriaIcon ${faMasksTheater}`}></FontAwesomeIcon>
-                        <h3 className={styles.tituloCategoria}>Teatro</h3>
-                    </div>
+                        <Link to={`search/Teatro`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faMasksTheater} className={`styles.categoriaIcon ${faMasksTheater}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Teatro</h3>
+                            </div>
+                        </Link>
 
-                    <div className={styles.categoria}>
-                        <FontAwesomeIcon icon={faFaceLaughBeam} className={`styles.categoriaIcon ${faFaceLaughBeam}`}></FontAwesomeIcon>
-                        <h3 className={styles.tituloCategoria}>Comedia</h3>
-                    </div>
+                        <Link to={`search/Comedia`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faFaceLaughBeam} className={`styles.categoriaIcon ${faFaceLaughBeam}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Comedia</h3>
+                            </div>
+                        </Link>
 
-                    <div className={styles.categoria}>
-                        <FontAwesomeIcon icon={faUmbrellaBeach} className={`styles.categoriaIcon ${faUmbrellaBeach}`}></FontAwesomeIcon>
-                        <h3 className={styles.tituloCategoria}>Festivais</h3>
+                        <Link to={`search/Tecnologia`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faUmbrellaBeach} className={`styles.categoriaIcon ${faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Tecnologia</h3>
+                            </div>
+                        </Link>
+
+                        <Link to={`search/Workshop`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faUmbrellaBeach} className={`styles.categoriaIcon ${faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Workshop</h3>
+                            </div>
+                        </Link>
+                        <Link to={`search/Literatura`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faUmbrellaBeach} className={`styles.categoriaIcon ${faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Literatura</h3>
+                            </div>
+                        </Link>
+                        <Link to={`search/Gastronomia`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faUmbrellaBeach} className={`styles.categoriaIcon ${faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Gastronomia</h3>
+                            </div>
+                        </Link>
+                        <Link to={`search/Cinema`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faUmbrellaBeach} className={`styles.categoriaIcon ${faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Cinema</h3>
+                            </div>
+                        </Link>
+                        <Link to={`search/Saúde`} className={styles.linkStyle}>
+                            <div className={styles.categoria}>
+                                <FontAwesomeIcon icon={faUmbrellaBeach} className={`styles.categoriaIcon ${faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <h3 className={styles.tituloCategoria}>Saúde</h3>
+                            </div>
+                        </Link>
                     </div>
+                    <button className={styles.arrow} onClick={scrollRight}>&gt;</button>
                 </div>
             </section>
 

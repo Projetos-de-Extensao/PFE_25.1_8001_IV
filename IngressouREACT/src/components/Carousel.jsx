@@ -1,23 +1,32 @@
 import styles from './Carousel.module.css'
 import { register } from 'swiper/element/bundle'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import um from '/assets/images/cinema.jpg'
-import dois from '/assets/images/comedia.jpg'
-import tres from '/assets/images/esporte.jpg'
-
-register();
+import { fetchEvents } from '../services/api';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const images = [
-    { id: '1', image: um },
-    { id: '2', image: dois },
-    { id: '3', image: tres }
-]
+register();
 
 function Carousel() {
+    const [events, setEvents] = useState([]);
+
+    useEffect(() => {
+        const loadEvents = async () => {
+            try {
+                const data = await fetchEvents();
+                setEvents(data);
+            } catch (error) {
+                console.error('Erro ao carregar eventos:', error);
+            }
+        }
+
+        loadEvents();
+    }, [])
+
     return (
         <Swiper
             slidesPerView={1}
@@ -25,10 +34,18 @@ function Carousel() {
             navigation
             className={styles.carouselSize}
         >
-            {images.map((item) => {
+            {events.slice(0,3).map(event => {
                 return (
-                    <SwiperSlide key={item.id}>
-                        <img src={item.image} alt="Teste" className={styles.slideSize}></img>
+                    <SwiperSlide key={event.id}>
+                        <div className={styles.slideWrapper}>
+                            <img src={event.imagemUrl} alt="Teste" className={styles.slideSize}></img>
+                            <div className={styles.informations}>
+                                <h1 className={styles.carouselTitle}>{event.nome}</h1>
+                                <Link className={styles.eventLink} to={`/event/${event.id}`}>
+                                    <button className={styles.carouselButton}>Ver mais</button>
+                                </Link>
+                            </div>
+                        </div>
                     </SwiperSlide>
                 )
             })}
