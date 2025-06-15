@@ -13,7 +13,7 @@
 }
 
 .registerContainer {
-    width: 40%;
+    width: 900px;
     height: 80%;
     background-color: #fff;
     border-radius: 10px;
@@ -98,4 +98,26 @@
 
 .linkStyle:hover {
     color: #0a1c36;
+}
+
+@media (max-width: 960px) {
+    .registerContainer {
+        width: 80%;
+    }
+
+    .inputsContainer {
+        width: 100%;
+    }
+
+    .inputStyle {
+        width: 80%;
+    }
+
+    .userTypeDiv {
+        width: 80%;
+    }
+
+    .radioButtons {
+        flex-direction: column;
+    }
 }

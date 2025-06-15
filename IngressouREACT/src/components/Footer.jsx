@@ -76,7 +76,6 @@ function Footer() {
 
                 </div>
 
-                <hr />
             </footer>
         </>
     )

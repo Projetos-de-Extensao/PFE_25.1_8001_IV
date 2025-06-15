@@ -3,9 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTicket, faUser, faMagnifyingGlass, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { useLocation, Link } from 'react-router-dom';
 import { UserContext } from "../context/UserContext";
-import { useContext } from "react";
+import { useState, useContext } from "react";
 
 function Header() {
+    const [active, setMode] = useState(false);
+    const ToggleMode = () => {
+        setMode(!active);
+    }
 
     const { user, logout } = useContext(UserContext);
     const location = useLocation();
@@ -70,6 +74,20 @@ function Header() {
                     <div className={styles.buscaProfile}>
                         <input type="text" className={styles.barraPesquisa} placeholder="Buscar eventos" />
                         <button className={styles.pesquisar} ><FontAwesomeIcon icon={faMagnifyingGlass} className={styles.lupa}></FontAwesomeIcon></button>
+                    </div>
+                    <div className={styles.hamburgerWrapper}>
+                        <div className={styles.icon} onClick={ToggleMode}>
+                            <div className={styles.hamburguer}></div>
+                            <div className={styles.hamburguer}></div>
+                            <div className={styles.hamburguer}></div>
+                        </div>
+
+                        <div className={`${styles.menuMobile} ${active ? styles.open : ''}`}>
+                            <ul>
+                                <li><Link to="/login" onClick={ToggleMode}>Login</Link></li>
+                                <li><Link to="/register" onClick={ToggleMode}>Register</Link></li>
+                            </ul>
+                        </div>
                     </div>
                     {user ? (
                         <>

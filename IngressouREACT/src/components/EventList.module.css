@@ -1,4 +1,12 @@
 .eventsStyle {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+/* @media (max-width: 1068px) {
+  .eventsStyle {
+    flex-direction: column;
+  }
+} */

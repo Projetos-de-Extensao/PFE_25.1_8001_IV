@@ -16,13 +16,10 @@ function EventPage() {
             try {
                 const data = await fetchEventsById(id);
                 setEvent(data);
-                console.log(data)
             } catch (err) {
                 setError(err.message);
-                console.log(err.message)
             } finally {
                 setLoading(false);
-                console.log("loading setado como false")
             };
         }
         getEvent();
@@ -55,7 +52,7 @@ function EventPage() {
                         <p className={styles.eventHour}>{event.dataHora}</p>
                     </div>
                     <div className={styles.valueAndButton}>
-                        <p className={styles.pStyle}>R$<h1 className={styles.price}>{event.preco}</h1></p>
+                        <p className={styles.pStyle}>R$<span className={styles.price}>{event.preco}</span></p>
                         <button className={styles.buyButton}>Comprar</button>
                     </div>
                 </section>

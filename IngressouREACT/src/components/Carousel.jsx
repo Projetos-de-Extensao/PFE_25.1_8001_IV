@@ -13,6 +13,8 @@ register();
 
 function Carousel() {
     const [events, setEvents] = useState([]);
+    const [error, setError] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const loadEvents = async () => {
@@ -21,11 +23,30 @@ function Carousel() {
                 setEvents(data);
             } catch (error) {
                 console.error('Erro ao carregar eventos:', error);
+                setError(true);
+            } finally {
+                setLoading(false);
             }
         }
 
         loadEvents();
     }, [])
+
+    if (loading) {
+        return (
+            <div className={styles.carouselFallback}>
+                <p>Carregando eventos...</p>
+            </div>
+        )
+    }
+
+    if (error || events.length === 0) {
+        return (
+            <div className={styles.carouselFallback}>
+                <p>Nenhum evento disponível no momento.</p>
+            </div>
+        );
+    }
 
     return (
         <Swiper

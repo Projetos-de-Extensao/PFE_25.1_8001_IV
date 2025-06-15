@@ -1,21 +1,23 @@
 .flexCategorias {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    scrollbar-width: none;
-    /* background-color: red; */
-    padding-left: 450px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 10px 0;
 
 }
+
+.flexCategorias::-webkit-scrollbar {
+  display: none; 
+}
+
 .categoria {
     scroll-snap-align: start;
     border: 1px solid rgb(218, 212, 212);
     padding: 1rem 2rem 0.5rem 2rem;
     margin: 0.5rem;
     width: 10rem;
-    /* height: 5rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,13 +37,6 @@
     top: -10px;
 }
 
-@media (max-width: 768px) {
-    .flexCategorias {
-        display: grid;
-        flex-direction: column;
-    }
-    
-}
 
 /********** ESTILOS DOS ICONS DAS CATEGORIAS **********/
 
@@ -80,8 +75,7 @@
 .flexEventosPrincipais {
     display: flex;
     justify-content: center;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .tituloSeccao {
@@ -210,23 +204,6 @@
     color: white;
     transition: 0.5s ease;
     cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .flexEventosPrincipais {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .tituloSeccao2 {
-        margin: 2rem 0rem 0rem 1.5rem;
-        font-size: 2rem;
-        font-weight: 500;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 
 /**********************FAMOSOS ESSA SEMANA*******************************/
@@ -413,21 +390,6 @@
     height: 37px;
     border-radius: 5px;
 }
-
-@media (max-width: 768px) {
-    .faLocationDot {
-        margin: 40px 20px 0px 20px;
-    }
-    
-    .locais {
-        width: 150%;
-        height: 37px;
-        display: flex;
-        border-radius: 5px;
-        justify-self: center
-    }
-}
-
 /***********EVENTOS-LOCAL*************/
 
 .flexEventoLocal {
@@ -562,38 +524,72 @@
 
 .titleAndButton {
     display: flex;
+    flex-direction: column;
     align-items: center;
     /* background-color: red; */
     justify-content: center;
-    margin: 2rem 0rem 0rem 3.8rem;
+    /* margin: 2rem 0rem 0rem 3.8rem; */
     gap: 30px;
+    justify-content: center;
 }
 
 .locationButton {
     cursor: pointer;
     padding: 5px;
-    width: 5%;
+    width: 100px;
 }
 
 .categoriaWrapper {
   display: flex;
-  width: 75%;
-  margin: 0 auto;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  width: 80%;
+  overflow: hidden; /* impede scroll visível */
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 .arrow {
-  background: none;
+   background-color: transparent;
   border: none;
-  font-size: 2rem;
+  font-size: 24px;
   cursor: pointer;
-  padding: 0 1rem;
-  color: #333;
-  transition: color 0.2s ease;
+  padding: 8px;
 }
 
 .arrow:hover {
   color: #000;
+}
+
+@media (max-width: 768px) {
+    .flexEventosPrincipais {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tituloSeccao2 {
+        margin: 2rem 0rem 0rem 1.5rem;
+        font-size: 2rem;
+        font-weight: 500;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .locationButton {
+        width: 20%;
+    }
+
+     .faLocationDot {
+        margin: 40px 20px 0px 20px;
+    }
+    
+    .locais {
+        width: 150%;
+        height: 37px;
+        display: flex;
+        border-radius: 5px;
+        justify-self: center
+    }
 }

@@ -59,3 +59,31 @@
     transform: scale(1.1);
     background-color: rgb(16, 65, 139);
 }
+
+@media (max-width: 990px) {
+
+    .carouselSize {
+        width: 100%;
+        height: 400px;
+    }
+
+    .carouselTitle {
+        font-size: 30px;
+    }
+
+    .informations {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+.carouselFallback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* igual à altura do carrossel */
+    background-color: #f9f9f9;
+    color: #555;
+    font-size: 1.2rem;
+    text-align: center;
+}
