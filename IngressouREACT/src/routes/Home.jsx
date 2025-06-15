@@ -1,6 +1,6 @@
 import styles from './Home.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMusic, faBasketball, faMasksTheater, faFaceLaughBeam, faUmbrellaBeach, faLocationDot, faMicrochip, faGraduationCap, faBook, faUtensils, faFilm, faNotesMedical, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faMusic, faBasketball, faMasksTheater, faFaceLaughBeam, faLocationDot, faMicrochip, faGraduationCap, faBook, faUtensils, faFilm, faNotesMedical, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Carousel from '../components/Carousel';
 import EventList from '../components/EventList.jsx';
 import { fetchEvents } from '../services/api.jsx';
@@ -25,7 +25,7 @@ function Home() {
             );
             const data = await response.json();
 
-            const userCity = data.address.city || data.address.town || data.address.village;
+            const userCity = data.address.city;
             setCity(userCity);
             setLocationRequested(true);
         } catch (error) {
@@ -106,38 +106,38 @@ function Home() {
 
                         <Link to={`search/Tecnologia`} className={styles.linkStyle}>
                             <div className={styles.categoria}>
-                                <FontAwesomeIcon icon={faUmbrellaBeach} className={`${styles.categoriaIcon} ${styles.faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <FontAwesomeIcon icon={faMicrochip} className={`${styles.categoriaIcon} ${styles.faMicrochip}`}></FontAwesomeIcon>
                                 <h3 className={styles.tituloCategoria}>Tecnologia</h3>
                             </div>
                         </Link>
 
                         <Link to={`search/Workshop`} className={styles.linkStyle}>
                             <div className={styles.categoria}>
-                                <FontAwesomeIcon icon={faMicrochip} className={`${styles.categoriaIcon} ${styles.faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <FontAwesomeIcon icon={faGraduationCap} className={`${styles.categoriaIcon} ${styles.faGraduationCap}`}></FontAwesomeIcon>
                                 <h3 className={styles.tituloCategoria}>Workshop</h3>
                             </div>
                         </Link>
                         <Link to={`search/Literatura`} className={styles.linkStyle}>
                             <div className={styles.categoria}>
-                                <FontAwesomeIcon icon={faBook} className={`${styles.categoriaIcon} ${styles.faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <FontAwesomeIcon icon={faBook} className={`${styles.categoriaIcon} ${styles.faBook}`}></FontAwesomeIcon>
                                 <h3 className={styles.tituloCategoria}>Literatura</h3>
                             </div>
                         </Link>
                         <Link to={`search/Gastronomia`} className={styles.linkStyle}>
                             <div className={styles.categoria}>
-                                <FontAwesomeIcon icon={faUtensils} className={`${styles.categoriaIcon} ${styles.faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <FontAwesomeIcon icon={faUtensils} className={`${styles.categoriaIcon} ${styles.faUtensils}`}></FontAwesomeIcon>
                                 <h3 className={styles.tituloCategoria}>Gastronomia</h3>
                             </div>
                         </Link>
                         <Link to={`search/Cinema`} className={styles.linkStyle}>
                             <div className={styles.categoria}>
-                                <FontAwesomeIcon icon={faFilm} className={`${styles.categoriaIcon} ${styles.faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <FontAwesomeIcon icon={faFilm} className={`${styles.categoriaIcon} ${styles.faFilm}`}></FontAwesomeIcon>
                                 <h3 className={styles.tituloCategoria}>Cinema</h3>
                             </div>
                         </Link>
                         <Link to={`search/Saúde`} className={styles.linkStyle}>
                             <div className={styles.categoria}>
-                                <FontAwesomeIcon icon={faNotesMedical} className={`${styles.categoriaIcon} ${styles.faUmbrellaBeach}`}></FontAwesomeIcon>
+                                <FontAwesomeIcon icon={faNotesMedical} className={`${styles.categoriaIcon} ${styles.faNotesMedical}`}></FontAwesomeIcon>
                                 <h3 className={styles.tituloCategoria}>Saúde</h3>
                             </div>
                         </Link>
@@ -168,9 +168,8 @@ function Home() {
             <section className={styles.eventosProximos}>
                 <div className={styles.titleAndButton}>
                     <h2 className={styles.tituloSeccao2}>Eventos Proximos de Você</h2>
-                    <button className={styles.locationButton}
-                    onClick={handleGetLocation}
-                    >
+
+                    <button className={styles.locationButton}onClick={handleGetLocation} title="Clique aqui para carregar eventos próximos de você!">
                         <FontAwesomeIcon icon={faLocationDot} className={styles.locationDotIcon} />
                     </button>
                 </div>

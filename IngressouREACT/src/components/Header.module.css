@@ -195,9 +195,17 @@ header {
     display: flex;
 }
 
+.searchAndHamburger {
+    display: none;
+}
+
 @media (max-width: 782px) {
     .barraPesquisa {
         display: none;
+    }
+
+    .active {
+        display: block !important; 
     }
 
     .logo {
@@ -212,8 +220,15 @@ header {
         display: block;
     }
 
+     .searchAndHamburger {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+     }
+
     .buttons,
-    .menuHeader {
+    .menuHeader,
+    .pesquisar {
         display: none;
     }
 }

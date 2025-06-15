@@ -111,3 +111,46 @@
     color: #fff;
     transition: 0.5s;
 }
+
+  span {
+        font-weight: 600;
+        font-size: 30px;
+    }
+
+@media (max-width: 782px) {
+    .pageContainer {
+        width: 100vw;
+        padding: 2px;
+    }
+
+    .imgPreview {
+        width: 100%;
+        height: 300px;
+    }
+
+    .imgSize {
+        width: 100%;
+    }
+
+    .finalInformation {
+        /* align-items: center; */
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 20px;
+        margin-bottom: 100px;
+    }
+
+    .valueAndButton {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .buyButton {
+        width: 200px;
+        height: 50px;
+    }
+
+    .pStyle, .price {
+        font-size: 30px;
+    }
+}

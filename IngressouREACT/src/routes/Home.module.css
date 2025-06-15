@@ -60,8 +60,28 @@
     color: rgb(255, 255, 0);
 }
 
-.faUmbrellaBeach {
+.faMicrochip {
     color: aqua;
+}
+
+.faGraduationCap {
+    color: rgb(0, 47, 255);
+}
+
+.faBook{
+    color: rgb(182, 0, 152);
+}
+
+.faUtensils {
+    color: rgb(0, 255, 149);
+}
+
+.faFilm {
+    color: rgb(179, 255, 0);
+}
+
+.faNotesMedical {
+    color: rgb(255, 0, 0);
 }
 
 /********FINAL ESTILO ICONS CATEGORIAS*********/
@@ -524,7 +544,7 @@
 
 .titleAndButton {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     /* background-color: red; */
     justify-content: center;
@@ -537,13 +557,23 @@
     cursor: pointer;
     padding: 5px;
     width: 100px;
+    height: 40px;
+    background-color: #185DC4;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.locationButton:hover {
+    transform: scale(1.03);
 }
 
 .categoriaWrapper {
   display: flex;
   align-items: center;
   position: relative;
-  width: 80%;
+  width: 60%;
   overflow: hidden; /* impede scroll visível */
   padding: 0 10px;
   margin: 0 auto;
@@ -561,7 +591,7 @@
   color: #000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 782px) {
     .flexEventosPrincipais {
         display: flex;
         flex-wrap: wrap;
@@ -575,6 +605,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .titleAndButton {
+        /* display: flex; */
+        flex-direction: column;
     }
 
     .locationButton {
@@ -591,5 +626,9 @@
         display: flex;
         border-radius: 5px;
         justify-self: center
+    }
+
+    .categoriaWrapper{
+        width: 100vw;
     }
 }

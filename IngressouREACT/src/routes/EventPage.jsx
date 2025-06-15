@@ -32,7 +32,7 @@ function EventPage() {
         <>
             <div className={styles.pageContainer}>
                 <div className={styles.imgPreview}>
-                    <img src={event.imagemUrl} alt="borderlaine" className={styles.imgSize}></img>
+                    <img src={event.imagemUrl} alt="" className={styles.imgSize}></img>
                 </div>
                 <section className={styles.eventInformation}>
                     <h1 className={styles.eventName}>{event.nome}</h1>
@@ -54,7 +54,9 @@ function EventPage() {
                     <div className={styles.valueAndButton}>
                         <p className={styles.pStyle}>R$<span className={styles.price}>{event.preco}</span></p>
                         <button className={styles.buyButton}>Comprar</button>
+                        
                     </div>
+                    <hr></hr>
                 </section>
                 <Link to="../home" className={styles.linkStyle}>Voltar a página inicial</Link>
             </div>

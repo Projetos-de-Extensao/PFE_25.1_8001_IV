@@ -10,7 +10,7 @@ function Event({ event }) {
                 </div>
 
                 <div className={styles.categoriaDataFlex}>
-                    <p className={`${styles.eventoCategoria} ${styles.eventoCategoriaMusica}`}>{event.categoria}</p>
+                    <p className={`${styles.eventoCategoria} ${styles[event.categoria.toLowerCase()]}`}>{event.categoria}</p>
                     <p className={styles.data}>{event.dataHora}</p>
                 </div>
 

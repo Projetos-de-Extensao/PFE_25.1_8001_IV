@@ -75,7 +75,10 @@ function Header() {
                         <input type="text" className={styles.barraPesquisa} placeholder="Buscar eventos" />
                         <button className={styles.pesquisar} ><FontAwesomeIcon icon={faMagnifyingGlass} className={styles.lupa}></FontAwesomeIcon></button>
                     </div>
-                    <div className={styles.hamburgerWrapper}>
+                    <div className={styles.searchAndHamburger}>
+                          <button className={`${styles.pesquisar} ${styles.active}`}><FontAwesomeIcon icon={faMagnifyingGlass} className={styles.lupa}></FontAwesomeIcon></button>
+                          
+                          <div className={styles.hamburgerWrapper}>
                         <div className={styles.icon} onClick={ToggleMode}>
                             <div className={styles.hamburguer}></div>
                             <div className={styles.hamburguer}></div>
@@ -88,6 +91,7 @@ function Header() {
                                 <li><Link to="/register" onClick={ToggleMode}>Register</Link></li>
                             </ul>
                         </div>
+                    </div>
                     </div>
                     {user ? (
                         <>
