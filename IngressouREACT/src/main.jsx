@@ -10,6 +10,7 @@ import Register from './routes/Register.jsx'
 import Search from './routes/Search.jsx'
 import InsertEvent from './components/InsertEvent.jsx'
 import EventPage from './routes/EventPage.jsx'
+import Compra from "./routes/Compra.jsx";
 import { UserProvider } from './context/UserContext.jsx';
 
 const router = createBrowserRouter([
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       { path: 'search', element: <Search /> },
       { path: 'insert', element: <InsertEvent /> },
       { path: 'event/:id', element: <EventPage /> },
-      { path: 'search/:categoria', element: <Search /> },
+      { path: 'compra/:id', element: <Compra /> }
     ]
   }
 ]);
