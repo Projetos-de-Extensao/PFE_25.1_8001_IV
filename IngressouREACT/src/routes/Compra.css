@@ -1,0 +1,295 @@
+.titulo-pagamento {
+  text-align: center;
+  margin: 3rem 0rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.zona-de-compra {
+  display: flex;
+  justify-content: center;
+}
+
+.opcoes-de-pagamento {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 370px;
+  margin-bottom: -10px;
+}
+.caixa-cartao {
+  display: flex;
+  border: 1px solid lightgray;
+  background-color: white;
+  box-shadow: 10px 10px 16px -3px rgba(222, 217, 217, 0.75);
+  border-radius: 10px;
+  height: 50px;
+  align-items: center;
+  padding: 0px 10px;
+  margin: 10px;
+  gap: 10px;
+  transition: top 0.5s ease;
+}
+
+.caixa-cartao:hover {
+  box-shadow: 10px 10px 33px -16px rgba(0, 0, 0, 0.75);
+  top: -10px;
+  border: 1px solid rgb(24, 93, 196);
+}
+
+.caixa-cartao.selected {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+.png-compra {
+  padding: 5px 5px;
+  max-height: 45px;
+}
+
+.resumo-do-produto {
+  margin: 10px;
+  border-radius: 8px;
+  min-height: 400px;
+  padding: 12px;
+  padding-top: 0px;
+  width: 300px;
+  background-color: black;
+  justify-content: right;
+}
+
+.texto-resumo {
+  color: white;
+  font-size: medium;
+  padding: 10px;
+}
+
+.minitexto-resumo {
+  color: white;
+  font-size: medium;
+  margin-top: -4px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+.local-evento {
+  opacity: 50%;
+  color: white;
+  font-size: medium;
+  margin-top: -4px;
+  text-align: left;
+}
+
+.foto-do-evento {
+  border-radius: 8px;
+  max-height: 130px;
+  width: 100px;
+}
+
+.imagem-evento {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.evento-foto-texto {
+  display: flex;
+  gap: 10px;
+}
+
+.produtos-comprados {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.texto-resumo-ingresso {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: white;
+  font-size: medium;
+}
+
+.texto-resumo-ingresso-trans {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: white;
+  font-size: medium;
+  opacity: 60%;
+}
+
+.quantidade-valor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.texto-laranja {
+  font-size: medium;
+  color: orange;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+.info-pagamento {
+  border-bottom: 2px solid white;
+  margin-bottom: 2px;
+}
+
+.selecione-pagamento {
+  color: white;
+  font-size: medium;
+  margin-top: 2px;
+  text-align: left;
+}
+
+.itens-resumo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  font-size: medium;
+  color: orange;
+  font-weight: 800;
+  margin-top: 0px;
+}
+
+.desconto {
+  display: flex;
+  width: 975px;
+  align-items: center;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.desconto::after {
+content: "";
+  flex: 1;
+  height: 2px;
+  background-color: black;
+}
+
+.caixa-de-cupom {
+  border: 1px solid lightgray;
+  background-color: white;
+  box-shadow: 10px 10px 16px -3px rgba(222, 217, 217, 0.75);
+  border-radius: 10px;
+  height: 150px;
+  padding: 0px 10px;
+  margin: 10px;
+  gap: 10px;
+}
+
+.cupom-png {
+  height: 30px;
+}
+
+.icone-cupom {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.conteiner-cupom {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.cupom-input {
+  padding: 10px 16px;
+  border: 2px solid #ccc;
+  border-radius: 8 px;
+  outline: none;
+  font-size: 16px;
+  width: 250px;
+  transition: border-color 0.3s;
+}
+
+.cupom-input:focus {
+  border-color: #007bff;
+}
+
+.botao-aplicar {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-aplicar:hover {
+  background-color: #0056b3;
+}
+
+.botao-finalizar {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+  justify-content: center;
+  width: 86%;
+  margin-left: 0px;
+  font-weight: 1000;
+}
+
+.botao-finalizar:hover {
+  background-color: #0056b3;
+}
+
+.final-da-pagina {
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.descricao-cupom {
+  text-align: left;
+  padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+   .zona-de-compra {
+    flex-direction: column;
+    padding: 10px;
+    flex-direction: column-reverse;
+  }
+  
+  .resumo-do-produto {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .opcoes-de-pagamento {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .evento-foto-texto {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .evento-foto-texto img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .desconto {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 30px;
+  }
+}
