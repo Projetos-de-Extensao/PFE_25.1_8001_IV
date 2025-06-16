@@ -56,7 +56,6 @@ function EventPage() {
                         <button className={styles.buyButton}>Comprar</button>
                         
                     </div>
-                    <hr></hr>
                 </section>
                 <Link to="../home" className={styles.linkStyle}>Voltar a página inicial</Link>
             </div>
