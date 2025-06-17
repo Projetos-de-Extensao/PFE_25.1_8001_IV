@@ -95,10 +95,8 @@ function Header() {
                     </div>
                     {user ? (
                         <>
-                            <a href="#" className={styles.profile}><FontAwesomeIcon icon={faUser} className={styles.faUser}></FontAwesomeIcon></a>
-                            <button onClick={logout} >
-                                <FontAwesomeIcon icon={faRightFromBracket}></FontAwesomeIcon>
-                            </button>
+                            <Link to="./perfil" className={styles.profile}><FontAwesomeIcon icon={faUser} className={styles.faUser}></FontAwesomeIcon></Link>
+                             
 
                         </>
                     ) : (

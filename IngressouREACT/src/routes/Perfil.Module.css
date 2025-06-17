@@ -1,0 +1,778 @@
+/*ESTILO GERAL*/
+
+.main {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #212529;
+    width: 100%;
+}
+
+.eventoCategoria {
+    font-size: 12px;
+    padding: 3px 7.8px;
+    border-radius: 10%;
+    color: white;
+    margin: 0px 10px;
+    font-weight: 500;
+}
+
+.eventoCategoriaMusica {
+    background-color: blue;
+    width: 60px;
+}
+
+.eventoCategoriaEsporte {
+    background-color: green;
+    width: 45px;
+}
+
+.eventoCategoriaTeatro {
+    background-color: rgb(182, 34, 34);
+    width: 2rem;
+}
+
+.eventoCategoriaComedia {
+    background-color: yellow;
+    width: 3rem;
+}
+
+.lados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.ladoEsquerdo{
+    max-width: 30%;
+}
+.ladoDireito {
+  max-width: 70%;
+}
+
+.headerDiv {
+  padding-left: 10px;
+}
+
+.tituloDivs {
+  font-weight: 500;
+  margin: 1.25rem 0;
+}
+
+.divCor {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 0.375rem;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+
+
+.divNavPerfil {
+  padding: 2.5rem 1rem 0.3rem 3rem;
+  background-color: #1C2333;
+}
+
+.navegacaoPerfil {
+  color: #FCF9FCBF;
+  font-size: 1.2rem;
+}
+
+.imgPerfilNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  border: 1px solid lightgray;
+  margin: 3rem 2rem 1rem 0rem;
+  border-radius: 0.375rem;
+}
+
+.iconUsuario {
+  display: flex;
+  justify-content: center;
+  font-size: 10rem;
+}
+
+.iconFotoPerfil {
+  margin: 3rem 0;
+}
+
+.nomeUsuario,
+.emailUsuario {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.editarPerfil {
+  margin: 2rem auto 0;
+  background-color: aliceblue;
+  padding: 0.5rem 1rem;
+  border: 1px solid lightgray;
+  width: fit-content;
+}
+
+.editarPerfil:hover {
+  background-color: rgb(177, 173, 173);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.sair {
+  padding: 0.4rem;
+  background-color: rgb(236, 96, 96);
+  border-radius: 0.25rem;
+  border: 1px solid rgb(190, 53, 53);
+  margin: 1rem auto;
+  width: fit-content;
+}
+
+.sair:hover {
+  background-color: rgb(211, 55, 55);
+  transition: 0.5s ease;
+}
+
+.sair a {
+  color: white;
+  font-size: 1rem;
+}
+
+
+.navPerfil {
+  margin: 0px;
+  width: 100%;
+  max-width: 266px;
+}
+
+.listaNavPerfil {
+  padding: 0;
+  list-style: none;
+  border-radius: 0.375rem;
+  border: 1px solid lightgray;
+  width: 100%;
+  max-width: 300px;
+}
+
+.listaNavPerfil li {
+  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  border: 1px solid lightgray;
+  width: 100%;
+}
+
+.listaNavPerfil li:hover {
+  background-color: #795eff;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.atual {
+  background-color: #795eff;
+  color: white;
+}
+
+.listaNavPerfil > a:nth-child(1) > li{
+    border-radius: 0.375rem 0.375rem 0rem 0rem;
+}
+
+.listaNavPerfil > a:nth-child(4) > li{
+    border-radius: 0rem 0rem 0.375rem 0.375rem;
+}
+
+/**************EVENTOS VINDO******************/
+
+.headerEventosVindo{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    align-items: center;
+}
+
+.tituloEventosVindo{
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.quantidadeEventosVindo{
+    background-color: #27B9D6;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 0.375rem;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px ;
+}
+
+.eventosVindoConteudo{
+    border: 1px solid lightgray;
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    gap: 20px;
+    border-radius: 0.375rem;
+    padding: 10px 10px;
+}
+
+.eventosVindoEvento{
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+}
+
+.eventoVindoHeader{
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border-radius: 0.375rem;
+}
+
+.eventoVindoTitulo{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.eventoVindoConteudo{
+    padding: 10px;
+}
+
+.eventoVindoDownloadDetalhes{
+    display: flex;
+    margin: 10px;
+}
+
+.download{
+    padding: 5px 10px;
+    background-color: rgb(235, 237, 240);
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    margin-right: 5px;
+}
+
+.detalhes{
+    padding: 5px 10px;
+    color: #27b9d6;
+    background-color: white;
+    border: 1px solid #27b9d6;
+    border-radius: 0.375rem;
+}
+
+.download:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.detalhes:hover{
+    background-color: #27b9d6;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.eventoVindoCodigoReembolso{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px;
+    border-radius: 0.375rem;
+}
+
+.pedirReembolso{
+    color: lightcoral;
+}
+
+
+.headerEventosPassaram{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.quantidadeEventosPassaram{
+    background-color: #27B9D6;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 0.375rem;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px ;
+}
+
+.eventosPassaramConteudo{
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    gap: 20px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.eventoPassou{
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+}
+
+.eventoPassouHeader{
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border-radius: 0.375rem;
+}
+
+.eventoPassouTitulo{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.eventoPassouCorpo{
+    padding: 10px;
+}
+
+.eventoPssouDownloadRecibo{
+    display: flex;
+    margin-left: 10px;
+}
+
+.recibo{
+    padding: 5px 10px;
+    background-color: rgb(235, 237, 240);
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    margin-right: 5px;
+}
+
+.avalie{
+    padding: 5px 10px;
+    color: #27b9d6;
+    background-color: white;
+    border: 1px solid #27b9d6;
+    border-radius: 0.375rem;
+}
+
+.recibo:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.avalie:hover{
+    background-color: #27b9d6;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.passaram{
+    border: 1px solid lightgray;
+    
+}
+
+
+@media (max-width: 1024px) {
+  .lados {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ladoEsquerdo,
+  .ladoDireito {
+    width: 100%;
+    max-width: 95%;
+    margin: 2rem auto 1.5rem auto ;
+  }
+
+  .navPerfil,
+  .listaNavPerfil,
+  .imgPerfilNav {
+    width: 100%;
+    max-width: 100%;
+    margin:  auto;
+  }
+
+  .navPerfil{
+    margin: 1rem 0rem;
+  }
+
+  .listaNavPerfil li {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .iconUsuario {
+    font-size: 6rem;
+  }
+
+  .iconFotoPerfil {
+    margin: 1.5rem 0;
+  }
+
+  .editarPerfil,
+  .sair {
+    width: 50%;
+    text-align: center;
+  }
+
+  .eventosVindoConteudo,
+  .eventosPassaramConteudo {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .eventoCategoria {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .eventoVindoTitulo,
+  .eventoPassouTitulo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 350px){
+    .quantidadeEventosVindo,
+    .quantidadeEventosPassaram{
+        display: none;
+    }
+
+    .eventoVindoCodigoReembolso{
+        flex-wrap: wrap;
+    }
+
+    .codigoDeCompra{
+        margin: 0px 10px 0px 0px;
+    }
+}
+
+/*@media (max-width: 1024px){
+    .lados {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ladoEsquerdo,
+  .ladoDireito {
+    width: 100%;
+    max-width: 95%;
+    margin: 2rem auto 1.5rem auto ;
+  }
+
+  .navPerfil,
+  .listaNavPerfil,
+  .imgPerfilNav {
+    width: 100%;
+    max-width: 100%;
+    margin:  auto;
+  }
+
+  .navPerfil{
+    margin: 1rem 0rem;
+  }
+
+  .listaNavPerfil li {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .iconUsuario {
+    font-size: 6rem;
+  }
+
+  .iconFotoPerfil {
+    margin: 1.5rem 0;
+  }
+
+  .editarPerfil,
+  .sair {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .lados {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ladoEsquerdo,
+  .ladoDireito {
+    width: 100%;
+    max-width: 95%;
+    margin: 2rem auto 1.5rem auto ;
+  }
+
+  .navPerfil,
+  .listaNavPerfil,
+  .imgPerfilNav {
+    width: 100%;
+    max-width: 100%;
+    margin:  auto;
+  }
+
+  .navPerfil{
+    margin: 1rem 0rem;
+  }
+
+  .listaNavPerfil li {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .iconUsuario {
+    font-size: 6rem;
+  }
+
+  .iconFotoPerfil {
+    margin: 1.5rem 0;
+  }
+
+  .editarPerfil,
+  .sair {
+    width: 50%;
+    text-align: center;
+  }
+}*/
+
+
+
+
+
+
+
+/*
+.headerEventosVindo{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    align-items: center;
+}
+
+.tituloEventosVindo{
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.quantidadeEventosVindo{
+    background-color: #27B9D6;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 0.375rem;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px ;
+}
+
+.eventosVindoConteudo{
+    border: 1px solid lightgray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 0.375rem;
+    margin-bottom: 20px;
+}
+
+.eventosVindoEvento{
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+}
+
+.eventoEindoHeader{
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border-radius: 0.375rem;
+}
+
+.eventoVindoTitulo{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.eventoVindoConteudo{
+    padding: 10px;
+}
+
+.eventoVindoDownloadDetalhes{
+    display: flex;
+    margin: 10px;
+}
+
+.download{
+    padding: 5px 10px;
+    background-color: rgb(235, 237, 240);
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    margin-right: 5px;
+}
+
+.detalhes{
+    padding: 5px 10px;
+    color: #27b9d6;
+    background-color: white;
+    border: 1px solid #27b9d6;
+    border-radius: 0.375rem;
+}
+
+.download:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.detalhes:hover{
+    background-color: #27b9d6;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.eventoVindoCodigoReembolso{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 0.375rem;
+}
+
+.pedir-reembolso{
+    color: lightcoral;
+}*/
+
+/*******************EVENTOS-QUE-PASSARM**************/
+
+.header-eventos-passaram{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    align-items: center;
+}
+
+.titulo-eventos-passaram{
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.quantidade-eventos-passaram{
+    background-color: #27B9D6;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 0.375rem;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px ;
+}
+
+.eventos-passaram-conteudo{
+    border: 1px solid lightgray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 0.375rem;
+    margin-bottom: 20px;
+}
+
+.eventos-passaram-evento{
+    width: 400px;
+    margin: 20px auto;
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+}
+
+.evento-passaram-header{
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 10px;
+    border-radius: 0.375rem;
+}
+
+.evento-passaram-titulo{
+    font-weight: 500;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.evento-passaram-conteudo{
+    padding: 10px;
+}
+
+.evento-passaram-download-detalhes{
+    display: flex;
+    margin: 10px;
+}
+
+.recibo{
+    padding: 5px 10px;
+    background-color: rgb(235, 237, 240);
+    border: 1px solid lightgray;
+    border-radius: 0.375rem;
+    margin-right: 5px;
+}
+
+.avalie{
+    padding: 5px 10px;
+    color: #27b9d6;
+    background-color: white;
+    border: 1px solid #27b9d6;
+    border-radius: 0.375rem;
+}
+
+.recibo:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.avalie:hover{
+    background-color: #27b9d6;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.evento-vindo-codigo-reembolso{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin: 10px 0px 0px 0px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 0.375rem;
+}
+
+.pedir-reembolso{
+    color: lightcoral;
+}
+
+.margin{
+    margin: 10px;
+}
+
+.passaram{
+    opacity: 60%;
+}

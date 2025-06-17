@@ -12,6 +12,9 @@ import InsertEvent from './components/InsertEvent.jsx'
 import EventPage from './routes/EventPage.jsx'
 import Compra from "./routes/Compra.jsx";
 import { UserProvider } from './context/UserContext.jsx';
+import Perfil from './routes/Perfil.jsx'
+import PerfilLayout from './components/PerfilLayout.jsx'
+import Reembolso from './routes/Reembolso.jsx'
 
 const router = createBrowserRouter([
   {
@@ -26,8 +29,17 @@ const router = createBrowserRouter([
       { path: 'insert', element: <InsertEvent /> },
       { path: 'event/:id', element: <EventPage /> },
       { path: 'compra/:id', element: <Compra /> }
-    ]
-  }
+    ],
+  },
+
+  {
+    path: '/',
+    element: <PerfilLayout />,
+    children: [
+      { path: '/perfil', element: <Perfil /> },
+      {path: '/reembolso', element: <Reembolso />}
+    ],
+  },
 ]);
 
 createRoot(document.getElementById('root')).render(

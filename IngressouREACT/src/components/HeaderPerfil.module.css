@@ -1,0 +1,35 @@
+.header {
+    width: 100%;
+    background-color: #1C2333;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    position: sticky;
+    z-index: 5;
+    top: 0;
+}
+
+.flexHeader {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.divTituloHeader {
+    display: flex;
+    align-items: center;
+}
+
+/*Icon ingresso*/
+.faTicket {
+    margin: 0.5rem 0.5rem 0rem 0rem;
+    font-size: 18px;
+    writing-mode: vertical-rl;
+    transform: rotate(40deg);
+    color: white;
+}
+
+.tituloHeader a{
+    font-size: 1.25rem;
+    color: white;
+    text-decoration: none;
+}
